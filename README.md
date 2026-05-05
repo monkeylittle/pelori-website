@@ -148,7 +148,13 @@ If you add e.g. `blog.html`:
    name (e.g. `de: 'Deutsch'`).
 2. Add a complete locale block to the `T` object, copying the
    English block as a starting point and translating every value.
-3. (Optional) Update the app's ARBs in
+3. Drop a flag SVG at `assets/flags/<code>.svg` (the existing files
+   are simple flat SVGs at the country's standard aspect ratio —
+   match the pattern). Add a corresponding rule to `styles.css`:
+   ```css
+   .lang-flag.lang-de { background-image: url('assets/flags/de.svg'); }
+   ```
+4. (Optional) Update the app's ARBs in
    `velora_app/lib/l10n/` if you want the in-app and the marketing
    site to ship the same language set. The lists aren't coupled at
    runtime — they're only "the same" by convention.

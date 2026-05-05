@@ -121,17 +121,48 @@ img {
   text-decoration: none;
 }
 
-/* Language selector — sits inside .nav-links so it shares the row's
-   gap. Native <select> styled to fit the rest of the nav: subtle
-   border, brand-accented chevron via background-image, no Material
-   shadow. */
+/* Language picker — flag of the active locale on the left, native
+   <select> on the right. The whole pill sits inside .nav-links so it
+   shares the row's gap. */
+.lang-picker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px 4px 8px;
+  border: 1px solid var(--border-1);
+  border-radius: var(--radius-pill);
+}
+.lang-picker:hover {
+  border-color: var(--neutral-400);
+}
+
+/* Flag chip. The lang-XX class is added by i18n.js once the chosen
+   locale resolves; before that the chip stays empty so we don't flash
+   an English flag for users who'll end up on a different language. */
+.lang-flag {
+  display: inline-block;
+  width: 22px;
+  height: 14px;
+  border-radius: 2px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+.lang-flag.lang-en { background-image: url('assets/flags/en.svg'); }
+.lang-flag.lang-nl { background-image: url('assets/flags/nl.svg'); }
+.lang-flag.lang-fr { background-image: url('assets/flags/fr.svg'); }
+.lang-flag.lang-es { background-image: url('assets/flags/es.svg'); }
+.lang-flag.lang-it { background-image: url('assets/flags/it.svg'); }
+
+/* Native <select> stripped of its chrome; the parent .lang-picker
+   provides the border + padding, this just supplies the chevron and
+   the language name. */
 .lang-select {
   appearance: none;
   -webkit-appearance: none;
   background: transparent;
-  border: 1px solid var(--border-1);
-  border-radius: var(--radius-pill);
-  padding: 6px 30px 6px 12px;
+  border: none;
+  padding: 2px 18px 2px 0;
   font-family: var(--font-body);
   font-size: 14px;
   font-weight: 500;
@@ -139,10 +170,10 @@ img {
   cursor: pointer;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path fill='%236b6b62' d='M0 0l5 6 5-6z'/></svg>");
   background-repeat: no-repeat;
-  background-position: right 10px center;
+  background-position: right center;
 }
-.lang-select:hover {
-  border-color: var(--neutral-400);
+.lang-select:focus {
+  outline: none;
 }
 
 /* ─── Hero ─────────────────────────────────────────────────────── */

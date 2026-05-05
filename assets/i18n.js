@@ -275,9 +275,11 @@
       if (v !== undefined) el.setAttribute('alt', v);
     });
 
-    // Reflect on the selector + persist.
+    // Reflect on the selector + flag chip + persist.
     const sel = document.getElementById('lang-select');
     if (sel) sel.value = lang;
+    const flag = document.getElementById('lang-flag');
+    if (flag) flag.className = 'lang-flag lang-' + lang;
     try {
       localStorage.setItem('pelori-lang', lang);
     } catch (e) {
