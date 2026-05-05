@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pelori — Group cycling, planned together</title>
+  <meta name="description" content="Pelori rounds up your crew before the ride: plan group rides, RSVP per week, chat with everyone in one place, and find new rides nearby.">
+  <meta name="theme-color" content="#0066FF">
+
+  <!-- Apple-specific -->
+  <meta name="apple-mobile-web-app-title" content="Pelori">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="apple-itunes-app" content="app-id=PLACEHOLDER">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Pelori — Group cycling, planned together">
+  <meta property="og:description" content="Plan group rides, RSVP per week, chat with the crew, and find new rides nearby.">
+  <meta property="og:url" content="https://pelori.fit">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://pelori.fit/assets/screenshots/02-my-rides.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/apple-touch-icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-row">
+      <a href="/" class="lockup">
+        <img src="assets/logos/logo-mark.svg" alt="">
+        <span class="lockup-name">pelori</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#screenshots">Screens</a>
+        <a href="#beta">Beta</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Ride <span class="accent">together</span>.<br>We've got the rest.</h1>
+      <p class="hero-sub">
+        Pelori rounds up your crew before the ride. Sorts the RSVPs.
+        Keeps the conversation in one place. So you can actually ride.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#beta">Join the open beta</a>
+        <a class="btn btn-ghost" href="#features">See what's in it</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <div class="container">
+      <p class="section-eyebrow">What it does</p>
+      <h2>The bits a group ride actually needs.</h2>
+      <p class="section-sub">
+        No cockpit dashboards, no leaderboards, no "you're 0.4 km behind
+        last Tuesday's split." Just the four things you message friends
+        about before every ride.
+      </p>
+
+      <div class="features">
+        <article class="feature">
+          <div class="feature-icon">P</div>
+          <h3>Plan the ride</h3>
+          <p>
+            Date, time, meeting pin, recurring or one-off. "Every Tuesday
+            at 7pm" is one tap. Invite your crew and the ride lives
+            somewhere everyone can find.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">R</div>
+          <h3>Know who's coming</h3>
+          <p>
+            Per-occurrence RSVPs — going, not going, or maybe. Tap the
+            count to see riders' faces. Resets every week so the
+            regulars don't have to rebook the same ride.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">C</div>
+          <h3>One thread per ride</h3>
+          <p>
+            Group chat right next to the ride it belongs to. Replaces
+            five overlapping group chats with the conversation
+            organised the same way the rides are.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">D</div>
+          <h3>Find rides nearby</h3>
+          <p>
+            Public rides from cycling clubs, bike shops, and weekend
+            crews. Browse the route and meeting point before you commit
+            — one tap to join.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="screenshots" class="shots">
+    <div class="container">
+      <p class="section-eyebrow">In the app</p>
+      <h2>What it looks like.</h2>
+      <div class="shots-row">
+        <img src="assets/screenshots/02-my-rides.png" alt="My Rides screen with three ride cards and a notification bell">
+        <img src="assets/screenshots/06-where-tab.png" alt="Ride settings — Where tab with meeting-point map">
+        <img src="assets/screenshots/03-chat.png" alt="Per-ride group chat with messages from the crew">
+        <img src="assets/screenshots/05-discover.png" alt="Discover screen showing public rides">
+      </div>
+    </div>
+  </section>
+
+  <section id="beta" class="cta">
+    <div class="container">
+      <h2>Ride together. Starting now.</h2>
+      <p class="cta-sub">
+        Pelori is in open beta on iOS via TestFlight. Join in with your
+        crew — feedback shapes what ships next.
+      </p>
+      <a class="btn btn-primary" href="https://testflight.apple.com/join/PLACEHOLDER">
+        Join the TestFlight
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-row">
+      <span>© <span id="year"></span> Pelori. Made for riders who roll out together.</span>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="mailto:hello@pelori.fit">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

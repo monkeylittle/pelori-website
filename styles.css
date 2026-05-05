@@ -1,0 +1,442 @@
+/* ─────────────────────────────────────────────────────────────────
+   Pelori marketing site
+   Mirrors the in-app design system tokens (colors_and_type.css).
+   ─────────────────────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
+
+:root {
+  --brand-electric: #0066ff;
+  --brand-electric-hover: #0052cc;
+  --brand-hivis: #d4ff3a;
+  --brand-sunset: #ff6b35;
+  --neutral-0: #ffffff;
+  --neutral-50: #fafaf7;
+  --neutral-100: #f2f2ee;
+  --neutral-200: #e6e6e0;
+  --neutral-400: #9b9b92;
+  --neutral-500: #6b6b62;
+  --neutral-700: #2a2a25;
+  --neutral-900: #0e0e0c;
+
+  --bg: var(--neutral-50);
+  --bg-elevated: var(--neutral-0);
+  --fg-1: var(--neutral-900);
+  --fg-2: var(--neutral-500);
+  --border-1: var(--neutral-200);
+
+  --font-display: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 16px;
+  --radius-pill: 999px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--fg-1);
+  -webkit-font-smoothing: antialiased;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+a {
+  color: var(--brand-electric);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--brand-electric-hover);
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ─── Top nav ─────────────────────────────────────────────────── */
+
+.nav {
+  padding: 24px 0;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lockup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--fg-1);
+}
+
+.lockup img {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+}
+
+.lockup-name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--fg-2);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: var(--fg-1);
+  text-decoration: none;
+}
+
+/* ─── Hero ─────────────────────────────────────────────────────── */
+
+.hero {
+  background: var(--brand-electric);
+  color: white;
+  padding: 96px 0 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(48px, 9vw, 96px);
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+  margin: 0 0 28px;
+  max-width: 14ch;
+}
+
+.hero h1 .accent {
+  color: var(--brand-hivis);
+}
+
+.hero-sub {
+  font-size: clamp(18px, 2.4vw, 22px);
+  line-height: 1.45;
+  max-width: 32ch;
+  margin: 0 0 40px;
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 400;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 28px;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  transition: transform 120ms ease, background-color 120ms ease;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background: white;
+  color: var(--brand-electric);
+}
+
+.btn-primary:hover {
+  background: var(--neutral-100);
+  text-decoration: none;
+  color: var(--brand-electric);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: white;
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  color: white;
+  border-color: white;
+}
+
+/* ─── Feature blocks ───────────────────────────────────────────── */
+
+.section {
+  padding: 88px 0;
+}
+
+.section-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brand-electric);
+  margin: 0 0 12px;
+}
+
+.section h2 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(36px, 6vw, 60px);
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  margin: 0 0 24px;
+  max-width: 18ch;
+}
+
+.section-sub {
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--fg-2);
+  max-width: 48ch;
+  margin: 0 0 56px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.feature {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-1);
+  border-radius: var(--radius-card);
+  padding: 28px 26px 32px;
+}
+
+.feature-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(0, 102, 255, 0.08);
+  color: var(--brand-electric);
+  display: grid;
+  place-items: center;
+  margin-bottom: 18px;
+  font-size: 22px;
+  font-family: var(--font-display);
+  font-weight: 800;
+}
+
+.feature h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.015em;
+  margin: 0 0 10px;
+  color: var(--fg-1);
+}
+
+.feature p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg-2);
+}
+
+/* ─── Screenshots strip ───────────────────────────────────────── */
+
+.shots {
+  background: var(--neutral-900);
+  color: white;
+  padding: 96px 0;
+  overflow: hidden;
+}
+
+.shots .section-eyebrow {
+  color: var(--brand-hivis);
+}
+
+.shots h2 {
+  color: white;
+  margin-bottom: 56px;
+}
+
+.shots-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  align-items: end;
+}
+
+.shots-row img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* ─── Closing CTA ─────────────────────────────────────────────── */
+
+.cta {
+  background: var(--brand-electric);
+  color: white;
+  padding: 96px 0;
+  text-align: center;
+}
+
+.cta h2 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(36px, 6vw, 60px);
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  margin: 0 auto 24px;
+  max-width: 16ch;
+  color: white;
+}
+
+.cta-sub {
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 40ch;
+  margin: 0 auto 40px;
+}
+
+/* ─── Footer ──────────────────────────────────────────────────── */
+
+footer {
+  background: var(--neutral-100);
+  padding: 48px 0;
+  font-size: 14px;
+  color: var(--fg-2);
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--fg-2);
+}
+
+.footer-links a:hover {
+  color: var(--fg-1);
+  text-decoration: none;
+}
+
+/* ─── Static legal pages (privacy / terms) ────────────────────── */
+
+.legal-body {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 56px 24px 96px;
+}
+
+.legal-body h1 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(36px, 5vw, 52px);
+  letter-spacing: -0.025em;
+  margin: 0 0 12px;
+}
+
+.legal-body h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.015em;
+  margin: 36px 0 12px;
+}
+
+.legal-body p,
+.legal-body li {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--neutral-700);
+}
+
+.legal-body ul {
+  padding-left: 20px;
+}
+
+.legal-body code {
+  background: var(--neutral-100);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.legal-back {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+/* ─── Mobile tweaks ────────────────────────────────────────────── */
+
+@media (max-width: 540px) {
+  .nav-links {
+    display: none;
+  }
+  .hero {
+    padding: 64px 0 80px;
+  }
+  .section {
+    padding: 64px 0;
+  }
+  .shots {
+    padding: 72px 0;
+  }
+  .cta {
+    padding: 72px 0;
+  }
+  .footer-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}

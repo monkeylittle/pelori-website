@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Pelori</title>
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="icon" href="assets/apple-touch-icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-row">
+      <a href="/" class="lockup">
+        <img src="assets/logos/logo-mark.svg" alt="">
+        <span class="lockup-name">pelori</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#beta">Beta</a>
+      </nav>
+    </div>
+  </header>
+  <main class="legal-body">
+    <a href="index.html" class="legal-back">&larr; Back to home</a>
+    <h1>Pelori Privacy Policy</h1>
+<blockquote>
+<p>⚠️ This is a <strong>starter draft</strong> intended as a working baseline. Have a
+lawyer review and tailor it to your jurisdiction before publishing
+the URL referenced from the App Store / Play Store listing.</p>
+</blockquote>
+<p><strong>Last updated:</strong> <em>TBD</em></p>
+<p>Pelori ("we", "us") provides a push-to-talk (PTT) and ride-coordination
+app for cyclists. This policy explains what we collect, how we use it,
+and the controls you have.</p>
+<h2>Information we collect</h2>
+<h3>Information you provide</h3>
+<ul>
+<li><strong>Account profile</strong> — email, first/family name, date of birth (used to
+  verify the 16+ minimum age), country, and an optional profile picture.</li>
+<li><strong>Ride content</strong> — ride name and description, schedules, meeting
+  points, route polylines you import (GPX or from Strava), and the
+  membership of each ride.</li>
+<li><strong>Voice transmissions</strong> — captured live through LiveKit while you are
+  connected to a ride; not recorded or stored by Pelori.</li>
+<li><strong>Feedback</strong> — text you submit through the in-app feedback form, along
+  with the app version and platform sent automatically.</li>
+</ul>
+<h3>Information collected automatically</h3>
+<ul>
+<li><strong>Location</strong> — when you toggle "share location" on a ride, your
+  device's coordinates, heading, and speed are broadcast to other
+  participants of that ride for the duration of the ride. Pelori does
+  not persist live-location history server-side; the data lives in
+  participant attributes inside LiveKit and is gone when you leave.</li>
+<li><strong>Diagnostic information</strong> — anonymised crash and performance reports
+  via Sentry. We do <strong>not</strong> attach request bodies or PII to these
+  reports.</li>
+</ul>
+<h3>Third-party integrations</h3>
+<ul>
+<li><strong>Strava</strong> — if you connect Strava, we receive an OAuth refresh/access
+  token and basic athlete name to import your routes. We do not access
+  your activities. Disconnecting Strava in profile settings revokes our
+  token.</li>
+</ul>
+<h2>How we use your information</h2>
+<ul>
+<li>Operate the service: authenticate you, deliver invitations, broadcast
+  voice and location to ride participants, render rides on maps.</li>
+<li>Enforce the 16+ age requirement.</li>
+<li>Investigate bugs and improve the app via crash reports and feedback.</li>
+</ul>
+<p>We do <strong>not</strong> sell your data or use it for advertising.</p>
+<h2>Where data is stored</h2>
+<ul>
+<li><strong>AWS</strong> (London region, eu-west-2 by default) — Cognito for
+  authentication, DynamoDB for ride and feedback data, S3 for profile
+  pictures.</li>
+<li><strong>LiveKit Cloud</strong> — runtime voice and live-location channels.</li>
+<li><strong>Strava</strong> — only if you have connected Strava; data flow is from
+  Strava to the app at your request.</li>
+</ul>
+<h2>Data retention</h2>
+<ul>
+<li>Account data: retained while your account is active. Deleting your
+  account removes profile, rides you organise, memberships, Strava
+  tokens, and avatar files (see <em>Your rights</em> below).</li>
+<li>Feedback messages: retained indefinitely so we can act on them.</li>
+<li>Crash diagnostics: retained per Sentry's default retention.</li>
+</ul>
+<h2>Your rights</h2>
+<ul>
+<li><strong>Access / export</strong> — contact us at the address below and we will
+  provide a copy of the data we hold about you.</li>
+<li><strong>Deletion</strong> — open <em>Profile → Delete account</em> in the app. Your
+  Cognito user, every ride you organise (and its members), all your
+  memberships, your Strava connection, and your avatar files are
+  permanently removed. Deletion is immediate and not recoverable.</li>
+<li><strong>Correction</strong> — edit your profile in the app, or contact us if a
+  field is not directly editable.</li>
+<li><strong>Withdraw consent</strong> — toggle "share location" off, disconnect
+  Strava, or delete your account at any time.</li>
+</ul>
+<h2>Children</h2>
+<p>Pelori is for users aged 16 and older. We do not knowingly collect data
+from children under 16. If we learn we have, we delete the account.</p>
+<h2>Security</h2>
+<p>We use HTTPS for all transport, JWT-authenticated APIs, and least-
+privilege IAM roles. We rotate third-party credentials via AWS Secrets
+Manager. No system is perfectly secure, so use a strong unique
+password.</p>
+<h2>Changes</h2>
+<p>We will update the "Last updated" date when this policy changes. Major
+changes are surfaced in-app the next time you sign in.</p>
+<h2>Contact</h2>
+<p><em>Email: TBD</em></p>
+  </main>
+  <footer>
+    <div class="container footer-row">
+      <span>© 2026 Pelori.</span>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="mailto:hello@pelori.fit">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
