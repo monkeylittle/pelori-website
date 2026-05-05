@@ -16,13 +16,15 @@
         <span class="lockup-name">pelori</span>
       </a>
       <nav class="nav-links">
-        <a href="index.html#features">Features</a>
-        <a href="index.html#beta">Beta</a>
+        <a href="index.html#features" data-i18n="nav.features">Features</a>
+        <a href="index.html#beta" data-i18n="nav.beta">Beta</a>
+        <select id="lang-select" class="lang-select" aria-label="Language" data-i18n-aria-label="lang.aria"></select>
       </nav>
     </div>
   </header>
   <main class="legal-body">
-    <a href="index.html" class="legal-back">&larr; Back to home</a>
+    <a href="index.html" class="legal-back" data-i18n="legal.back">&larr; Back to home</a>
+    <p class="legal-en-banner" data-legal-en-only data-i18n="legal.en_only" hidden>This page is available in English only — the app itself is fully localised.</p>
     <h1>Pelori Terms of Service</h1>
 <blockquote>
 <p>⚠️ This is a <strong>starter draft</strong> intended as a working baseline. Have a
@@ -92,13 +94,14 @@ Pelori after a change means you accept the new terms.</p>
   </main>
   <footer>
     <div class="container footer-row">
-      <span>© 2026 Pelori.</span>
+      <span data-i18n="footer.copyright">© 2026 Pelori.</span>
       <div class="footer-links">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="mailto:hello@pelori.fit">Contact</a>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+        <a href="terms.html" data-i18n="footer.terms">Terms</a>
+        <a href="mailto:hello@pelori.fit" data-i18n="footer.contact">Contact</a>
       </div>
     </div>
   </footer>
+  <script src="assets/i18n.js"></script>
 </body>
 </html>

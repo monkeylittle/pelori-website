@@ -121,6 +121,30 @@ img {
   text-decoration: none;
 }
 
+/* Language selector — sits inside .nav-links so it shares the row's
+   gap. Native <select> styled to fit the rest of the nav: subtle
+   border, brand-accented chevron via background-image, no Material
+   shadow. */
+.lang-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 1px solid var(--border-1);
+  border-radius: var(--radius-pill);
+  padding: 6px 30px 6px 12px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--fg-1);
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path fill='%236b6b62' d='M0 0l5 6 5-6z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+.lang-select:hover {
+  border-color: var(--neutral-400);
+}
+
 /* ─── Hero ─────────────────────────────────────────────────────── */
 
 .hero {
@@ -414,6 +438,19 @@ footer {
   display: inline-block;
   margin-bottom: 24px;
   font-size: 14px;
+}
+
+/* Banner shown above the body of a legal page when the user has
+   chosen a non-English chrome locale. The legal text itself stays
+   English; this just sets expectations. */
+.legal-en-banner {
+  background: rgba(0, 102, 255, 0.08);
+  border-left: 3px solid var(--brand-electric);
+  padding: 12px 16px;
+  margin: 0 0 24px;
+  font-size: 14px;
+  color: var(--neutral-700);
+  border-radius: 6px;
 }
 
 /* ─── Mobile tweaks ────────────────────────────────────────────── */

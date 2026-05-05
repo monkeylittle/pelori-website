@@ -32,32 +32,33 @@
         <span class="lockup-name">pelori</span>
       </a>
       <nav class="nav-links">
-        <a href="#features">Features</a>
-        <a href="#screenshots">Screens</a>
-        <a href="#beta">Beta</a>
+        <a href="#features" data-i18n="nav.features">Features</a>
+        <a href="#screenshots" data-i18n="nav.screens">Screens</a>
+        <a href="#beta" data-i18n="nav.beta">Beta</a>
+        <select id="lang-select" class="lang-select" aria-label="Language" data-i18n-aria-label="lang.aria"></select>
       </nav>
     </div>
   </header>
 
   <section class="hero">
     <div class="container">
-      <h1>Ride <span class="accent">together</span>.<br>We've got the rest.</h1>
-      <p class="hero-sub">
+      <h1 data-i18n-html="hero.headline_html">Ride <span class="accent">together</span>.<br>We've got the rest.</h1>
+      <p class="hero-sub" data-i18n="hero.sub">
         Pelori rounds up your crew before the ride. Sorts the RSVPs.
         Keeps the conversation in one place. So you can actually ride.
       </p>
       <div class="hero-ctas">
-        <a class="btn btn-primary" href="#beta">Join the open beta</a>
-        <a class="btn btn-ghost" href="#features">See what's in it</a>
+        <a class="btn btn-primary" href="#beta" data-i18n="hero.cta_primary">Join the open beta</a>
+        <a class="btn btn-ghost" href="#features" data-i18n="hero.cta_secondary">See what's in it</a>
       </div>
     </div>
   </section>
 
   <section id="features" class="section">
     <div class="container">
-      <p class="section-eyebrow">What it does</p>
-      <h2>The bits a group ride actually needs.</h2>
-      <p class="section-sub">
+      <p class="section-eyebrow" data-i18n="features.eyebrow">What it does</p>
+      <h2 data-i18n="features.title">The bits a group ride actually needs.</h2>
+      <p class="section-sub" data-i18n="features.sub">
         No cockpit dashboards, no leaderboards, no "you're 0.4 km behind
         last Tuesday's split." Just the four things you message friends
         about before every ride.
@@ -66,8 +67,8 @@
       <div class="features">
         <article class="feature">
           <div class="feature-icon">P</div>
-          <h3>Plan the ride</h3>
-          <p>
+          <h3 data-i18n="features.plan.title">Plan the ride</h3>
+          <p data-i18n="features.plan.body">
             Date, time, meeting pin, recurring or one-off. "Every Tuesday
             at 7pm" is one tap. Invite your crew and the ride lives
             somewhere everyone can find.
@@ -76,8 +77,8 @@
 
         <article class="feature">
           <div class="feature-icon">R</div>
-          <h3>Know who's coming</h3>
-          <p>
+          <h3 data-i18n="features.rsvp.title">Know who's coming</h3>
+          <p data-i18n="features.rsvp.body">
             Per-occurrence RSVPs — going, not going, or maybe. Tap the
             count to see riders' faces. Resets every week so the
             regulars don't have to rebook the same ride.
@@ -86,8 +87,8 @@
 
         <article class="feature">
           <div class="feature-icon">C</div>
-          <h3>One thread per ride</h3>
-          <p>
+          <h3 data-i18n="features.chat.title">One thread per ride</h3>
+          <p data-i18n="features.chat.body">
             Group chat right next to the ride it belongs to. Replaces
             five overlapping group chats with the conversation
             organised the same way the rides are.
@@ -96,8 +97,8 @@
 
         <article class="feature">
           <div class="feature-icon">D</div>
-          <h3>Find rides nearby</h3>
-          <p>
+          <h3 data-i18n="features.discover.title">Find rides nearby</h3>
+          <p data-i18n="features.discover.body">
             Public rides from cycling clubs, bike shops, and weekend
             crews. Browse the route and meeting point before you commit
             — one tap to join.
@@ -109,25 +110,25 @@
 
   <section id="screenshots" class="shots">
     <div class="container">
-      <p class="section-eyebrow">In the app</p>
-      <h2>What it looks like.</h2>
+      <p class="section-eyebrow" data-i18n="shots.eyebrow">In the app</p>
+      <h2 data-i18n="shots.title">What it looks like.</h2>
       <div class="shots-row">
-        <img src="assets/screenshots/02-my-rides.png" alt="My Rides screen with three ride cards and a notification bell">
-        <img src="assets/screenshots/06-where-tab.png" alt="Ride settings — Where tab with meeting-point map">
-        <img src="assets/screenshots/03-chat.png" alt="Per-ride group chat with messages from the crew">
-        <img src="assets/screenshots/05-discover.png" alt="Discover screen showing public rides">
+        <img src="assets/screenshots/02-my-rides.png" alt="My Rides screen with three ride cards and a notification bell" data-i18n-alt="shots.alt.myrides">
+        <img src="assets/screenshots/06-where-tab.png" alt="Ride settings — Where tab with meeting-point map" data-i18n-alt="shots.alt.where">
+        <img src="assets/screenshots/03-chat.png" alt="Per-ride group chat with messages from the crew" data-i18n-alt="shots.alt.chat">
+        <img src="assets/screenshots/05-discover.png" alt="Discover screen showing public rides" data-i18n-alt="shots.alt.discover">
       </div>
     </div>
   </section>
 
   <section id="beta" class="cta">
     <div class="container">
-      <h2>Ride together. Starting now.</h2>
-      <p class="cta-sub">
+      <h2 data-i18n="cta.title">Ride together. Starting now.</h2>
+      <p class="cta-sub" data-i18n="cta.sub">
         Pelori is in open beta on iOS via TestFlight. Join in with your
         crew — feedback shapes what ships next.
       </p>
-      <a class="btn btn-primary" href="https://testflight.apple.com/join/PLACEHOLDER">
+      <a class="btn btn-primary" href="https://testflight.apple.com/join/PLACEHOLDER" data-i18n="cta.button">
         Join the TestFlight
       </a>
     </div>
@@ -135,17 +136,15 @@
 
   <footer>
     <div class="container footer-row">
-      <span>© <span id="year"></span> Pelori. Made for riders who roll out together.</span>
+      <span data-i18n="footer.copyright">© 2026 Pelori. Made for riders who roll out together.</span>
       <div class="footer-links">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="mailto:hello@pelori.fit">Contact</a>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+        <a href="terms.html" data-i18n="footer.terms">Terms</a>
+        <a href="mailto:hello@pelori.fit" data-i18n="footer.contact">Contact</a>
       </div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="assets/i18n.js"></script>
 </body>
 </html>
