@@ -104,6 +104,12 @@ img {
   letter-spacing: -0.04em;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
 .nav-links {
   display: flex;
   gap: 24px;
