@@ -1,0 +1,46 @@
+Pelori — alles wat een groepsrit echt nodig heeft
+
+Pelori is een fietsapp voor groepsritten. Hij regelt de vier dingen
+waarover je vrienden voor elke rit appt: plan de rit, zie wie er
+komt, hou het gesprek op één plek, en vind nieuwe ritten in de
+buurt.
+
+Dit is de open bèta. Het is de standaardversie — alles wat je nodig
+hebt om een terugkerende groepsrit te plannen en te runnen:
+
+— Rit plannen. Datum, tijd, ontmoetingspin, terugkerend of eenmalig.
+  "Elke dinsdag om 19:00" is één tik. Nodig je crew uit en de rit
+  staat ergens waar iedereen hem kan vinden.
+— Per keer aanmelden. Komt, komt niet, of misschien. Reset elke
+  week, zodat de vaste rijders dezelfde rit niet steeds opnieuw
+  hoeven te boeken.
+— Eén gesprek per rit. Groepschat naast de rit waarbij hij hoort.
+  Vervangt de vijf overlappende groepschats die je nu hebt.
+— Ontdekken. Publieke ritten van fietsclubs, fietswinkels en
+  weekendcrews bij jou in de buurt.
+
+Waar we naar zoeken
+
+— Meld je aan zoals een nieuwe gebruiker dat zou doen: land,
+  leeftijd, taalkeuze.
+— Plan een rit, nodig een vriend uit (of een tweede toestel) en
+  bekijk hoe de aanmeldingen door de week veranderen.
+— Probeer de chat in een rit die je organiseert en in een rit waarin
+  je meedoet.
+— Blader door Ontdekken en doe mee aan een publieke rit.
+— Alles wat crasht, verwarrend is, of raar klinkt in jouw taal.
+  Pelori is gelokaliseerd in Engels, Nederlands, Frans, Spaans en
+  Italiaans — vertalingen die niet lekker lopen zijn precies de
+  feedback die we willen.
+
+Wat nog niet in deze bèta zit
+
+Voice-chat en de live groepskaart komen later dit jaar met een
+Premium-versie. De knoppen zitten nog niet in deze build.
+
+Feedback geven
+
+Via het formulier in de app (Profiel → Feedback sturen) of door op
+elke TestFlight-mail te antwoorden. We lezen elk bericht.
+
+Bedankt dat je met ons meefietst. — Het Pelori-team

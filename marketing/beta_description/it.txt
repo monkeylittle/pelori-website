@@ -1,0 +1,48 @@
+Pelori — l'essenziale per le uscite di gruppo
+
+Pelori è un'app di ciclismo per le uscite di gruppo. Gestisce le
+quattro cose di cui parli con gli amici prima di ogni uscita:
+pianificarla, vedere chi viene, tenere la conversazione in un solo
+posto e trovare nuove uscite vicino a te.
+
+Questa è la beta pubblica. È la versione standard — tutto quello che
+ti serve per pianificare e portare avanti un'uscita di gruppo
+ricorrente:
+
+— Pianifica l'uscita. Data, ora, punto di ritrovo, ricorrente o una
+  tantum. "Ogni martedì alle 19:00" è un tocco. Invita la tua crew e
+  l'uscita vive in un posto che tutti riescono a trovare.
+— Conferma per ogni occorrenza. Vengo, non vengo, forse. Si resetta
+  ogni settimana, così gli abituali non devono riprenotare la stessa
+  uscita.
+— Una conversazione per uscita. Chat di gruppo accanto all'uscita a
+  cui appartiene. Sostituisce i cinque gruppi sovrapposti che hai
+  adesso.
+— Scopri. Uscite pubbliche di club ciclistici, negozi di bici e crew
+  del weekend vicino a te.
+
+Cosa stiamo cercando di testare
+
+— Registrati come farebbe un nuovo utente: paese, età, selettore di
+  lingua.
+— Pianifica un'uscita, invita un amico (o un secondo dispositivo) e
+  guarda come cambiano le risposte durante la settimana.
+— Prova la chat su un'uscita che organizzi e su una a cui ti unisci.
+— Sfoglia Scopri e unisciti a un'uscita pubblica.
+— Qualsiasi cosa che vada in crash, confonda o suoni strana nella
+  tua lingua. Pelori è tradotta in inglese, olandese, francese,
+  spagnolo e italiano — le traduzioni che suonano male sono proprio
+  il feedback che vogliamo.
+
+Cosa non è ancora in questa beta
+
+La chat vocale e la mappa di gruppo in tempo reale arrivano più
+avanti quest'anno con una versione Premium. I pulsanti non sono in
+questa build.
+
+Inviare feedback
+
+Tramite il modulo nell'app (Profilo → Invia feedback) o rispondendo
+a qualunque email di TestFlight. Leggiamo ogni messaggio.
+
+Grazie per pedalare con noi. — Il team Pelori

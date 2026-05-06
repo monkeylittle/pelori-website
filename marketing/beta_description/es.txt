@@ -1,0 +1,49 @@
+Pelori — lo que una salida en grupo necesita de verdad
+
+Pelori es una app de ciclismo para salidas en grupo. Resuelve las
+cuatro cosas de las que hablas con tus colegas antes de cada salida:
+planificarla, ver quién viene, mantener la conversación en un solo
+sitio, y encontrar nuevas salidas cerca.
+
+Esta es la beta abierta. Es la versión estándar — todo lo que
+necesitas para planificar y mantener una salida en grupo recurrente:
+
+— Planifica la salida. Fecha, hora, punto de encuentro, recurrente o
+  puntual. "Todos los martes a las 19:00" se configura con un toque.
+  Invita a tu grupo y la salida queda en un sitio que todos pueden
+  encontrar.
+— RSVP por ocurrencia. Voy, no voy, o tal vez. Se resetea cada
+  semana para que los habituales no tengan que reservar la misma
+  salida una y otra vez.
+— Una conversación por salida. Chat de grupo al lado de la salida a
+  la que pertenece. Sustituye los cinco grupos solapados que tienes
+  ahora.
+— Descubrir. Salidas públicas de clubs ciclistas, tiendas de bici y
+  crews de fin de semana cerca de ti.
+
+Qué buscamos probar
+
+— Date de alta como lo haría un usuario nuevo: país, edad, selector
+  de idioma.
+— Planifica una salida, invita a un amigo (o a un segundo
+  dispositivo) y observa cómo cambian los RSVPs durante la semana.
+— Prueba el chat en una salida que organices y en otra a la que te
+  unas.
+— Explora Descubrir y únete a una salida pública.
+— Cualquier cosa que falle, que confunda o que suene raro en tu
+  idioma. Pelori está traducida al inglés, neerlandés, francés,
+  español e italiano — las traducciones que no suenen bien son
+  exactamente el feedback que queremos.
+
+Qué todavía no está en esta beta
+
+El chat de voz y el mapa de grupo en directo llegan más adelante
+este año con una versión Premium. Los botones no están en esta
+build.
+
+Cómo dar feedback
+
+Desde el formulario en la app (Perfil → Enviar feedback) o
+respondiendo a cualquier email de TestFlight. Leemos cada mensaje.
+
+Gracias por rodar con nosotros. — El equipo Pelori

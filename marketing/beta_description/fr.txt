@@ -1,0 +1,49 @@
+Pelori — tout ce qu'il faut pour une sortie de groupe
+
+Pelori est une appli vélo pour les sorties de groupe. Elle gère les
+quatre choses dont tu parles à tes potes avant chaque sortie :
+planifier la sortie, voir qui vient, garder la conversation au même
+endroit, et trouver de nouvelles sorties à proximité.
+
+C'est la bêta ouverte. La version standard — tout ce qu'il faut pour
+planifier et faire vivre une sortie de groupe récurrente :
+
+— Planifie la sortie. Date, heure, point de rendez-vous, récurrente
+  ou ponctuelle. "Tous les mardis à 19 h" se met en un geste. Invite
+  ta team et la sortie vit dans un endroit où tout le monde la
+  retrouve.
+— Réponds à chaque occurrence. J'y vais, je n'y vais pas, peut-être.
+  Ça se remet à zéro chaque semaine pour que les habitués n'aient
+  pas à reréserver la même sortie.
+— Une discussion par sortie. La conversation de groupe juste à côté
+  de la sortie concernée. Remplace les cinq groupes WhatsApp qui se
+  chevauchent.
+— Découvrir. Sorties publiques de clubs cyclistes, magasins et
+  équipes du weekend près de chez toi.
+
+Ce qu'on cherche à tester
+
+— Inscris-toi comme le ferait un nouvel utilisateur : pays, âge,
+  choix de langue.
+— Planifie une sortie, invite un ami (ou un second appareil), et
+  regarde les réponses évoluer au fil de la semaine.
+— Essaie la discussion sur une sortie que tu organises et sur une à
+  laquelle tu participes.
+— Parcours Découvrir et rejoins une sortie publique.
+— Tout ce qui plante, tout ce qui est confus, tout ce qui sonne
+  bizarrement dans ta langue. Pelori est traduite en anglais,
+  néerlandais, français, espagnol et italien — les traductions qui
+  sonnent faux sont exactement le retour qu'on attend.
+
+Ce qui n'est pas encore dans cette bêta
+
+Le chat vocal et la carte de groupe en direct arrivent plus tard
+cette année avec une formule Premium. Les boutons ne sont pas dans
+cette version.
+
+Envoyer un retour
+
+Via le formulaire dans l'appli (Profil → Envoyer un retour) ou en
+répondant à n'importe quel mail TestFlight. On lit chaque message.
+
+Merci de rouler avec nous. — L'équipe Pelori

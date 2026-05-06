@@ -15,10 +15,21 @@ pelori_website/
 ├── sitemap.xml
 ├── .well-known/
 │   └── apple-app-site-association
-└── assets/
-    ├── apple-touch-icon.png
-    ├── logos/
-    └── screenshots/  (subset of the App Store marketing PNGs)
+├── assets/
+│   ├── apple-touch-icon.png
+│   ├── logos/
+│   └── screenshots/  (subset of the App Store marketing PNGs)
+└── marketing/        App Store assets — not served by the site
+    ├── composer.py   composites raw simulator captures into App
+    │                 Store marketing PNGs
+    ├── fonts/        gitignored — auto-fetched by composer.py
+    ├── screenshots/
+    │   ├── raw/             plain simulator captures (input)
+    │   └── composed-6.9/    composited PNGs (output, uploaded to
+    │                        App Store Connect, subset copied
+    │                        into assets/screenshots/)
+    └── beta_description/    TestFlight Beta App Description copy,
+                             plain text, one .txt per locale
 ```
 
 ## Deploy
@@ -142,12 +153,11 @@ default `src` should point at the English copy so the initial
 paint (and crawlers that don't run JS) sees a real image.
 
 The screenshot PNGs themselves come from
-`velora_app/marketing/screenshots/composed-6.9/<lang>/`. After a
-fresh capture + compose pass, copy the four panels the home page
-embeds (`02-my-rides.png`, `03-chat.png`, `05-discover.png`,
+`marketing/screenshots/composed-6.9/<lang>/` (this same repo).
+After a fresh capture + compose pass, copy the four panels the home
+page embeds (`02-my-rides.png`, `03-chat.png`, `05-discover.png`,
 `06-where-tab.png`) into the matching `assets/screenshots/<lang>/`.
-See `velora_app/marketing/screenshots/raw/README.md` for the
-capture process.
+See `marketing/screenshots/raw/README.md` for the capture process.
 
 ### Translating a new page
 

@@ -1,0 +1,42 @@
+Pelori — the bits a group ride actually needs
+
+Pelori is a group-cycling app that handles the four things you
+message friends about before every ride: plan it, see who's coming,
+keep the chat in one place, and find new rides nearby.
+
+This is the open beta. It's the standard tier — everything you need
+to plan and run a recurring group ride:
+
+— Plan a ride. Date, time, meeting pin, recurring or one-off. "Every
+  Tuesday at 7pm" is one tap. Invite your crew and the ride lives
+  somewhere everyone can find.
+— RSVP per occurrence. Going, not going, or maybe. Resets every week
+  so the regulars don't have to rebook the same ride.
+— One thread per ride. Group chat right next to the ride it belongs
+  to. Replaces the five overlapping group chats you've got now.
+— Discover. Public rides from cycling clubs, bike shops, and weekend
+  crews near you.
+
+What we're looking for
+
+— Sign up the way a new user would: country, age, language picker.
+— Plan a ride, invite a friend (or a second device), watch the RSVPs
+  change through the week.
+— Try the chat on a ride you organise and on one you've joined.
+— Browse Discover and join a public ride.
+— Anything that crashes, anything that's confusing, anything that
+  reads weirdly in your language. Pelori is localised in English,
+  Dutch, French, Spanish, and Italian — wrong-sounding translations
+  are exactly the feedback we want.
+
+What's not in this beta yet
+
+Voice chat and the live group map are coming with a Premium tier
+later this year. The buttons aren't in this build.
+
+Sending feedback
+
+Use the in-app form (Profile → Send feedback) or hit reply on any
+TestFlight email. We read every message.
+
+Thanks for riding with us. — The Pelori team
