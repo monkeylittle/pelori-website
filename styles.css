@@ -121,24 +121,87 @@ img {
   text-decoration: none;
 }
 
-/* Language picker — flag of the active locale on the left, native
-   <select> on the right. The whole pill sits inside .nav-links so it
-   shares the row's gap. */
+/* Language picker — custom listbox so the dropdown items can carry a
+   flag image alongside the language name. Native <option> elements
+   don't accept images (the OS renders them); a button + <ul role=
+   "listbox"> gives us full control. */
 .lang-picker {
+  position: relative;
+  display: inline-block;
+}
+
+.lang-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   padding: 4px 12px 4px 8px;
+  background: transparent;
   border: 1px solid var(--border-1);
   border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--fg-1);
+  cursor: pointer;
 }
-.lang-picker:hover {
+.lang-btn:hover {
   border-color: var(--neutral-400);
 }
+.lang-btn:focus-visible {
+  outline: 2px solid var(--brand-electric);
+  outline-offset: 2px;
+}
 
-/* Flag chip. The lang-XX class is added by i18n.js once the chosen
-   locale resolves; before that the chip stays empty so we don't flash
-   an English flag for users who'll end up on a different language. */
+.lang-chevron {
+  width: 10px;
+  height: 6px;
+  color: var(--neutral-500);
+  transition: transform 120ms ease;
+}
+.lang-btn[aria-expanded="true"] .lang-chevron {
+  transform: rotate(180deg);
+}
+
+/* Dropdown panel — anchored under the right edge of the button so it
+   never overflows the viewport on a narrow nav row. */
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  margin: 0;
+  padding: 4px;
+  list-style: none;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-1);
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  min-width: 180px;
+  z-index: 50;
+}
+.lang-menu li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--fg-1);
+  cursor: pointer;
+  user-select: none;
+}
+.lang-menu li:hover,
+.lang-menu li:focus {
+  background: var(--neutral-100);
+  outline: none;
+}
+.lang-menu li[aria-selected="true"] {
+  color: var(--brand-electric);
+  font-weight: 700;
+}
+
+/* Flag chip — used both inside the button (the active flag) and
+   inside each menu item. lang-XX classes are added by i18n.js. */
 .lang-flag {
   display: inline-block;
   width: 22px;
@@ -147,34 +210,13 @@ img {
   background-size: cover;
   background-position: center;
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+  flex-shrink: 0;
 }
 .lang-flag.lang-en { background-image: url('assets/flags/en.svg'); }
 .lang-flag.lang-nl { background-image: url('assets/flags/nl.svg'); }
 .lang-flag.lang-fr { background-image: url('assets/flags/fr.svg'); }
 .lang-flag.lang-es { background-image: url('assets/flags/es.svg'); }
 .lang-flag.lang-it { background-image: url('assets/flags/it.svg'); }
-
-/* Native <select> stripped of its chrome; the parent .lang-picker
-   provides the border + padding, this just supplies the chevron and
-   the language name. */
-.lang-select {
-  appearance: none;
-  -webkit-appearance: none;
-  background: transparent;
-  border: none;
-  padding: 2px 18px 2px 0;
-  font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--fg-1);
-  cursor: pointer;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path fill='%236b6b62' d='M0 0l5 6 5-6z'/></svg>");
-  background-repeat: no-repeat;
-  background-position: right center;
-}
-.lang-select:focus {
-  outline: none;
-}
 
 /* ─── Hero ─────────────────────────────────────────────────────── */
 

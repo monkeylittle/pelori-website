@@ -285,11 +285,18 @@
       if (tpl) el.setAttribute('src', tpl.replace('{lang}', lang));
     });
 
-    // Reflect on the selector + flag chip + persist.
-    const sel = document.getElementById('lang-select');
-    if (sel) sel.value = lang;
+    // Reflect on the picker button + menu + persist.
     const flag = document.getElementById('lang-flag');
     if (flag) flag.className = 'lang-flag lang-' + lang;
+    const nameEl = document.getElementById('lang-name');
+    if (nameEl) nameEl.textContent = NATIVE_NAMES[lang] || NATIVE_NAMES.en;
+    const menu = document.getElementById('lang-menu');
+    if (menu) {
+      menu.querySelectorAll('li').forEach(function (li) {
+        const active = li.dataset.value === lang;
+        li.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+    }
     try {
       localStorage.setItem('pelori-lang', lang);
     } catch (e) {
@@ -303,19 +310,98 @@
     if (banner) banner.hidden = lang === 'en';
   }
 
-  function setupSelector() {
-    const sel = document.getElementById('lang-select');
-    if (!sel) return;
-    sel.innerHTML = SUPPORTED.map(function (code) {
-      return '<option value="' + code + '">' + NATIVE_NAMES[code] + '</option>';
+  function setupPicker() {
+    const picker = document.getElementById('lang-picker');
+    const btn = document.getElementById('lang-btn');
+    const menu = document.getElementById('lang-menu');
+    if (!picker || !btn || !menu) return;
+
+    // Populate the menu once. Each item carries the language's flag
+    // chip + native name, plus a data-value used by the click handler.
+    menu.innerHTML = SUPPORTED.map(function (code) {
+      return (
+        '<li role="option" data-value="' + code + '" tabindex="-1">' +
+          '<span class="lang-flag lang-' + code + '" aria-hidden="true"></span>' +
+          '<span>' + NATIVE_NAMES[code] + '</span>' +
+        '</li>'
+      );
     }).join('');
-    sel.addEventListener('change', function (e) {
-      applyLang(e.target.value);
+
+    function open() {
+      menu.hidden = false;
+      btn.setAttribute('aria-expanded', 'true');
+      // Move focus into the menu so arrow keys work straight away.
+      const active = menu.querySelector('li[aria-selected="true"]')
+        || menu.querySelector('li');
+      if (active) active.focus();
+    }
+    function close() {
+      menu.hidden = true;
+      btn.setAttribute('aria-expanded', 'false');
+    }
+    function toggle() {
+      if (menu.hidden) open(); else close();
+    }
+
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      toggle();
+    });
+
+    menu.addEventListener('click', function (e) {
+      const li = e.target.closest('li[data-value]');
+      if (!li) return;
+      applyLang(li.dataset.value);
+      close();
+      btn.focus();
+    });
+
+    // Keyboard nav — arrow keys move between options, Enter/Space
+    // selects, Escape closes and returns focus to the button.
+    menu.addEventListener('keydown', function (e) {
+      const items = Array.from(menu.querySelectorAll('li'));
+      const idx = items.indexOf(document.activeElement);
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        const next = items[(idx + 1 + items.length) % items.length];
+        if (next) next.focus();
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        const prev = items[(idx - 1 + items.length) % items.length];
+        if (prev) prev.focus();
+      } else if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const li = document.activeElement;
+        if (li && li.dataset && li.dataset.value) {
+          applyLang(li.dataset.value);
+          close();
+          btn.focus();
+        }
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        close();
+        btn.focus();
+      }
+    });
+
+    // Click outside the picker closes it.
+    document.addEventListener('click', function (e) {
+      if (!picker.contains(e.target)) close();
+    });
+    // Escape on the trigger itself also closes (covers the case where
+    // focus is on the button rather than inside the menu).
+    btn.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        close();
+      } else if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        open();
+      }
     });
   }
 
   document.addEventListener('DOMContentLoaded', function () {
-    setupSelector();
+    setupPicker();
     applyLang(pickLang());
   });
 })();
