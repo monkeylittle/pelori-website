@@ -220,10 +220,6 @@ to test the first-visit path.
   `index.html`. Replace `PLACEHOLDER` with the App Store Connect
   numeric app id once Pelori is published. Lets iOS Safari show the
   Smart Banner that opens the app if installed.
-- **TestFlight invite link** in `index.html` (the "Join the
-  TestFlight" button). Replace
-  `https://testflight.apple.com/join/PLACEHOLDER` with the public
-  beta URL from App Store Connect → TestFlight → Public Link.
 - **`apple-app-site-association`** has the team id `U2D4FG73A9`
   hard-coded — confirm that's correct for the App Store Connect
   team id before deploying. Universal Links to `/rides/*` will then
