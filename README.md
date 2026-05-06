@@ -21,9 +21,12 @@ pelori_website/
 │   ├── logos/
 │   └── screenshots/  (subset of the App Store marketing PNGs)
 └── marketing/        App Store assets — not served by the site
-    ├── composer.py   composites raw simulator captures into App
-    │                 Store marketing PNGs
-    ├── fonts/        gitignored — auto-fetched by composer.py
+    ├── composer.py        composites raw simulator captures into
+    │                      App Store marketing PNGs
+    ├── feature_graphic.py renders the 1024×500 Play Console
+    │                      feature graphic
+    ├── feature_graphic.png Play Console listing hero (output)
+    ├── fonts/             gitignored — auto-fetched by both scripts
     ├── screenshots/
     │   ├── raw/             plain simulator captures (input)
     │   └── composed-6.9/    composited PNGs (output, uploaded to
