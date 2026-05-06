@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.monkeylittle.pelori",
+      "sha256_cert_fingerprints": [
+        "F2:9D:5D:63:C3:4B:CD:06:E0:90:17:15:93:98:21:CB:90:51:1F:9A:50:F5:77:07:A7:4A:A9:C2:C3:90:32:E3"
+      ]
+    }
+  }
+]
