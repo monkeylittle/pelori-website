@@ -84,6 +84,12 @@ what we collect, how we use it, and the controls you have.</p>
 <li><strong>Diagnostic information</strong> — anonymised crash and performance
   reports via Sentry. We do not attach request bodies or
   user-identifying details to these reports.</li>
+<li><strong>Product analytics</strong> — counts of in-app actions (sign-up, sign-in,
+  ride created, RSVP, screen view) via Google Firebase Analytics so
+  we can see which parts of the app are used and which break. Events
+  are tagged with an anonymous Firebase-generated instance ID rather
+  than your account; we do not pass your name, email, or Cognito
+  user ID to Firebase.</li>
 </ul>
 <h3>Calendar (optional, write-only)</h3>
 <p>When you tap <em>Add to calendar</em> after RSVPing or joining a ride,
@@ -112,6 +118,10 @@ third-party advertising.</p>
 <li><strong>Amazon Web Services (Ireland region, eu-west-1)</strong> — Cognito for
   authentication, DynamoDB for ride / chat / RSVP data, S3 for
   profile pictures.</li>
+<li><strong>Google Firebase Analytics</strong> — anonymised app-usage event counts
+  (no Cognito user ID, no name or email passed). Hosted by Google
+  in the US/EU; standard Google Cloud terms apply. See
+  firebase.google.com/support/privacy.</li>
 <li><strong>LiveKit Cloud</strong> — realtime transport for voice and live position
   during a ride. Streams pass through their infrastructure but are
   not recorded or persisted. See livekit.io/legal/privacy-policy.</li>
