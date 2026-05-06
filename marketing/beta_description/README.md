@@ -8,19 +8,36 @@ The TestFlight description field renders newlines but **no markdown**
 as literal asterisks / hashes. These files are kept in plain text so
 they paste straight into the form without manual cleanup.
 
+## Folder layout
+
+Each round of the description copy lives in its own subfolder so we
+keep a paper trail across rewrites:
+
+```
+beta_description/
+├── README.md           ← this file
+├── beta-1/             ← copy used for the first public-beta cycle
+│   ├── en.txt
+│   ├── nl.txt
+│   ├── fr.txt
+│   ├── es.txt
+│   └── it.txt
+└── beta-2/             ← created when the description gets a rewrite
+    └── …
+```
+
+The numbering is independent of the TestFlight build number — bump
+to `beta-2/` only when the description copy itself changes. Most new
+builds just rotate the per-build "What to Test" field (separate to
+the description) and reuse whatever's in the latest `beta-N/`.
+
 ## How to use
 
 1. Open App Store Connect → Pelori → TestFlight → Test Information.
 2. Pick the language slot (English, Dutch, French, Spanish, Italian).
-3. Copy the matching `<lang>.txt` body into "Beta App Description".
+3. Copy the matching `<latest>/<lang>.txt` body into "Beta App
+   Description".
 4. Save.
-
-## Updating between builds
-
-The description itself rarely changes — it's the elevator pitch for
-the open beta and stays stable across builds. The "What to Test"
-field is the per-build one; that copy lives in
-`build_notes/<build>.txt` (TODO: add when build 2 ships).
 
 ## Editing rules
 
