@@ -91,6 +91,16 @@ what we collect, how we use it, and the controls you have.</p>
   than your account; we do not pass your name, email, or Cognito
   user ID to Firebase.</li>
 </ul>
+<h3>Notifications (optional)</h3>
+<p>If you grant the system notification permission, Pelori sends two
+kinds of push reminder per ride: a "did you RSVP?" nudge to anyone
+who hasn't replied, and a pre-ride "the ride is coming up" reminder
+to anyone going. Both are configured per-ride by the organiser
+(disabled by default), and both are delivered via Firebase Cloud
+Messaging. Your device's push token is stored on our side paired
+with your account so the scheduler can route to it; it's removed
+when you sign out, delete your account, or revoke the permission
+at the OS level.</p>
 <h3>Calendar (optional, write-only)</h3>
 <p>When you tap <em>Add to calendar</em> after RSVPing or joining a ride,
 Pelori requests write-only calendar permission and pre-populates the
@@ -118,10 +128,13 @@ third-party advertising.</p>
 <li><strong>Amazon Web Services (Ireland region, eu-west-1)</strong> — Cognito for
   authentication, DynamoDB for ride / chat / RSVP data, S3 for
   profile pictures.</li>
-<li><strong>Google Firebase Analytics</strong> — anonymised app-usage event counts
-  (no Cognito user ID, no name or email passed). Hosted by Google
-  in the US/EU; standard Google Cloud terms apply. See
-  firebase.google.com/support/privacy.</li>
+<li><strong>Google Firebase (Analytics + Cloud Messaging)</strong> — anonymised
+  app-usage event counts and device push tokens. Analytics events
+  carry no Cognito user ID, name, or email. Cloud Messaging stores
+  the per-device push token paired with your account so we can
+  send ride reminders; the token is removed when you sign out or
+  delete your account. Hosted by Google in the US/EU; standard
+  Google Cloud terms apply. See firebase.google.com/support/privacy.</li>
 <li><strong>LiveKit Cloud</strong> — realtime transport for voice and live position
   during a ride. Streams pass through their infrastructure but are
   not recorded or persisted. See livekit.io/legal/privacy-policy.</li>
@@ -151,9 +164,9 @@ third-party advertising.</p>
   for an email-based request flow.</li>
 <li><strong>Correction</strong> — edit your profile in the app, or contact us if a
   field is not directly editable.</li>
-<li><strong>Withdraw consent</strong> — revoke calendar, location, or microphone
-  permission in <em>iOS Settings → Pelori</em> at any time, or delete your
-  account.</li>
+<li><strong>Withdraw consent</strong> — revoke calendar, location, microphone, or
+  notification permission in <em>iOS Settings → Pelori</em> at any time,
+  or delete your account.</li>
 </ul>
 <p>EU / UK users have the right under the GDPR to lodge a complaint
 with their local data protection authority. California users may
