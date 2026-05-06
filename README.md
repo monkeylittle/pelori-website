@@ -235,6 +235,12 @@ to test the first-visit path.
   `index.html`. Replace `PLACEHOLDER` with the App Store Connect
   numeric app id once Pelori is published. Lets iOS Safari show the
   Smart Banner that opens the app if installed.
+- **`PLACEHOLDER_PLAY_URL`** in `index.html` (the "Get on Google Play"
+  CTA button). Once Open Testing rolls out, replace with
+  `https://play.google.com/store/apps/details?id=com.monkeylittle.pelori`
+  — the canonical Play listing URL routes opted-in testers to the
+  testing build automatically. Same URL works for Production once it
+  ships, no future swap needed.
 - **`apple-app-site-association`** has the team id `U2D4FG73A9`
   hard-coded — confirm that's correct for the App Store Connect
   team id before deploying. Universal Links to `/rides/*` will then
