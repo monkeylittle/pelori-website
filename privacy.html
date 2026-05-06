@@ -39,7 +39,7 @@
     <a href="index.html" class="legal-back" data-i18n="legal.back">&larr; Back to home</a>
     <p class="legal-en-banner" data-legal-en-only data-i18n="legal.en_only" hidden>This page is available in English only — the app itself is fully localised.</p>
     <h1>Pelori Privacy Policy</h1>
-<p><strong>Last updated:</strong> 5 May 2026</p>
+<p><strong>Last updated:</strong> 6 May 2026</p>
 <p>Pelori ("we", "us") makes a ride-coordination app for cyclists. You
 use it to plan group rides with friends, RSVP per occurrence, chat
 with the crew, and find public rides nearby. This policy explains
@@ -62,11 +62,25 @@ what we collect, how we use it, and the controls you have.</p>
 </ul>
 <h3>Information collected automatically</h3>
 <ul>
-<li><strong>Location (foreground only)</strong> — if you grant the permission, your
-  device's coordinates are read at app start and sent with each
-  Discover query so we can sort public rides by distance from you.
-  Coordinates are not persisted server-side. You can deny the
-  permission and Discover still works (without distance sorting).</li>
+<li><strong>Location</strong></li>
+<li><strong>Foreground (when the app is open)</strong> — if you grant the
+    permission, your device's coordinates are read at app start and
+    sent with each Discover query so we can sort public rides by
+    distance from you. Coordinates are not persisted server-side.
+    You can deny and Discover still works without the sort.</li>
+<li><strong>Background, during a live-ride session</strong> — when you join the
+    live-ride channel for a group ride, your coordinates are
+    streamed to the other riders in that ride so the crew can see
+    who's where on the route. Streaming stops when you leave the
+    ride or end the session. Coordinates are delivered through our
+    voice/realtime provider (LiveKit) and are not persisted on our
+    servers.</li>
+<li><strong>Voice and live position (optional, during a ride)</strong> — Pelori
+  uses LiveKit Cloud (livekit.io) to stream voice and live position
+  between riders in the same ride. Audio and coordinates are
+  delivered in real time to the participants of that ride and are
+  not recorded or persisted by us. The session ends when you leave
+  the ride.</li>
 <li><strong>Diagnostic information</strong> — anonymised crash and performance
   reports via Sentry. We do not attach request bodies or
   user-identifying details to these reports.</li>
@@ -98,6 +112,9 @@ third-party advertising.</p>
 <li><strong>Amazon Web Services (Ireland region, eu-west-1)</strong> — Cognito for
   authentication, DynamoDB for ride / chat / RSVP data, S3 for
   profile pictures.</li>
+<li><strong>LiveKit Cloud</strong> — realtime transport for voice and live position
+  during a ride. Streams pass through their infrastructure but are
+  not recorded or persisted. See livekit.io/legal/privacy-policy.</li>
 <li><strong>Sentry</strong> — anonymised crash and performance diagnostics.</li>
 </ul>
 <h2>Data retention</h2>
@@ -122,8 +139,9 @@ third-party advertising.</p>
   recoverable.</li>
 <li><strong>Correction</strong> — edit your profile in the app, or contact us if a
   field is not directly editable.</li>
-<li><strong>Withdraw consent</strong> — revoke calendar or location permission in
-  <em>iOS Settings → Pelori</em> at any time, or delete your account.</li>
+<li><strong>Withdraw consent</strong> — revoke calendar, location, or microphone
+  permission in <em>iOS Settings → Pelori</em> at any time, or delete your
+  account.</li>
 </ul>
 <p>EU / UK users have the right under the GDPR to lodge a complaint
 with their local data protection authority. California users may
