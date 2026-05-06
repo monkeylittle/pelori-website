@@ -274,6 +274,16 @@
       const v = lookup(t, key);
       if (v !== undefined) el.setAttribute('alt', v);
     });
+    // Locale-keyed image sources — the attribute holds the full src
+    // path with `{lang}` as a placeholder, e.g.
+    //   <img data-i18n-src="assets/screenshots/{lang}/02-my-rides.png">
+    // The JS substitutes the active locale on apply. Used by the
+    // marketing screenshots on the home page so each language sees
+    // its own captured + composed set.
+    document.querySelectorAll('[data-i18n-src]').forEach(function (el) {
+      const tpl = el.getAttribute('data-i18n-src');
+      if (tpl) el.setAttribute('src', tpl.replace('{lang}', lang));
+    });
 
     // Reflect on the selector + flag chip + persist.
     const sel = document.getElementById('lang-select');

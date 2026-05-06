@@ -125,6 +125,30 @@ based on the user's chosen locale.
 
 3. Reload the page — no build step.
 
+### Locale-keyed images
+
+The `data-i18n-src` attribute swaps an `<img>`'s source per locale.
+Drop `{lang}` into the path where the locale code should land:
+
+```html
+<img src="assets/screenshots/en/02-my-rides.png"
+     data-i18n-src="assets/screenshots/{lang}/02-my-rides.png">
+```
+
+Used by the marketing screenshots on the home page — each locale's
+captured-and-composed PNGs live in `assets/screenshots/<lang>/` and
+the JS substitutes `{lang}` for the active code on apply. The
+default `src` should point at the English copy so the initial
+paint (and crawlers that don't run JS) sees a real image.
+
+The screenshot PNGs themselves come from
+`velora_app/marketing/screenshots/composed-6.9/<lang>/`. After a
+fresh capture + compose pass, copy the four panels the home page
+embeds (`02-my-rides.png`, `03-chat.png`, `05-discover.png`,
+`06-where-tab.png`) into the matching `assets/screenshots/<lang>/`.
+See `velora_app/marketing/screenshots/raw/README.md` for the
+capture process.
+
 ### Translating a new page
 
 If you add e.g. `blog.html`:
