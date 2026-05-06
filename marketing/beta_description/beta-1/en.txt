@@ -1,3 +1,10 @@
+====================================================================
+1. BETA APP DESCRIPTION
+   App Store Connect → TestFlight → Test Information →
+   Beta App Description (up to 10,000 chars).
+   Stays mostly stable across builds; rotate "What to Test" instead.
+====================================================================
+
 Pelori — the bits a group ride actually needs
 
 Pelori is a group-cycling app that handles the four things you
@@ -40,3 +47,86 @@ Use the in-app form (Profile → Send feedback) or hit reply on any
 TestFlight email. We read every message.
 
 Thanks for riding with us. — The Pelori team
+
+
+====================================================================
+2. APP STORE DESCRIPTION
+   App Store Connect → App Store → Localization →
+   Description (up to 4,000 chars). Long-form pitch shown on the
+   App Store listing page.
+====================================================================
+
+Pelori is the cycling app for group rides. It handles the four
+things you message friends about before every ride: plan it, see
+who's coming, keep the chat in one place, and find new rides
+nearby.
+
+PLAN A RIDE
+Date, time, meeting pin, recurring or one-off. "Every Tuesday at
+7pm" is one tap. Invite your crew and the ride lives somewhere
+everyone can find. No more screenshotting WhatsApp polls.
+
+RSVP PER OCCURRENCE
+Going, not going, or maybe — answered per week. Tap the count to
+see who's coming. Resets every Sunday so the regulars don't have
+to rebook the same ride.
+
+ONE THREAD PER RIDE
+Group chat sits right next to the ride it belongs to. Replaces
+five overlapping group chats with one conversation organised the
+same way the rides are.
+
+DISCOVER
+Public rides from cycling clubs, bike shops, and weekend crews
+near you. Browse the route and meeting point before you commit —
+one tap to join.
+
+BUILT FOR CREWS OF RIDERS
+Whether you ride with a club of fifty or three friends, Pelori
+scales without forcing you into a single workflow. Recurring shop
+rides, ad-hoc Saturday loops, club race-prep sessions — all live
+in the same simple "rides" model.
+
+LOCALISED
+Pelori speaks English, Dutch, French, Spanish, and Italian. Set
+your account language and the whole app rebuilds.
+
+PRIVACY AND YOUR DATA
+Pelori does not sell your data. Coordinates aren't persisted
+server-side. Profile pictures sit in private storage with signed
+URLs. We use HTTPS everywhere and rotate credentials regularly.
+Read the full policy at pelori.fit/privacy.
+
+WHAT'S COMING
+Voice chat and live group map are in development as part of an
+upcoming Premium tier — talk to the crew and see who's where on
+the route, hands-free. The standard tier is free and stays free.
+
+Riding solo? Pelori isn't for you yet — try Strava. Pelori is for
+riders who roll out together.
+
+— The Pelori team
+hello@pelori.fit
+
+
+====================================================================
+3. PROMOTIONAL TEXT
+   App Store Connect → App Store → Localization →
+   Promotional Text (up to 170 chars). Editable without a new
+   build; shown above the description on the listing.
+====================================================================
+
+Plan group rides, see who's in, chat the crew, find rides nearby.
+The four things WhatsApp can't do well — in one place. Free, no ads,
+in five languages.
+
+
+====================================================================
+4. KEYWORDS
+   App Store Connect → App Store → Localization →
+   Keywords (up to 100 chars total, comma-separated, no spaces
+   after commas — every char counts).
+   Avoid competitor names and "free"/"best" — Apple may reject.
+====================================================================
+
+cycling,bike,bicycle,group ride,ride planner,club,route,gravel,road,mtb,crew,plan

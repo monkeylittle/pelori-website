@@ -1,3 +1,9 @@
+====================================================================
+1. BETA APP DESCRIPTION
+   App Store Connect → TestFlight → Test Information →
+   Beta App Description (fino a 10.000 caratteri).
+====================================================================
+
 Pelori — l'essenziale per le uscite di gruppo
 
 Pelori è un'app di ciclismo per le uscite di gruppo. Gestisce le
@@ -46,3 +52,85 @@ Tramite il modulo nell'app (Profilo → Invia feedback) o rispondendo
 a qualunque email di TestFlight. Leggiamo ogni messaggio.
 
 Grazie per pedalare con noi. — Il team Pelori
+
+
+====================================================================
+2. APP STORE DESCRIPTION
+   App Store Connect → App Store → Localizzazione →
+   Descrizione (fino a 4.000 caratteri).
+====================================================================
+
+Pelori è l'app di ciclismo per le uscite di gruppo. Gestisce le
+quattro cose di cui parli con gli amici prima di ogni uscita:
+pianificarla, vedere chi viene, tenere la conversazione in un solo
+posto e trovare nuove uscite vicino a te.
+
+PIANIFICA L'USCITA
+Data, ora, punto di ritrovo, ricorrente o una tantum. "Ogni
+martedì alle 19:00" è un tocco. Invita la tua crew e l'uscita vive
+in un posto che tutti riescono a trovare. Niente più screenshot di
+sondaggi WhatsApp.
+
+CONFERMA PER OGNI OCCORRENZA
+Vengo, non vengo, forse — risposta a settimana. Tocca il contatore
+per vedere chi viene. Si resetta ogni domenica, così gli abituali
+non devono riprenotare la stessa uscita.
+
+UNA CONVERSAZIONE PER USCITA
+Chat di gruppo accanto all'uscita a cui appartiene. Sostituisce
+cinque gruppi sovrapposti con una sola conversazione, organizzata
+come le uscite.
+
+SCOPRI
+Uscite pubbliche di club ciclistici, negozi di bici e crew del
+weekend vicino a te. Guarda il percorso e il punto di ritrovo
+prima di impegnarti — un tocco per unirti.
+
+PENSATA PER I GRUPPI DI CICLISTI
+Che tu pedali con un club da cinquanta o con tre amici, Pelori si
+adatta senza forzarti in un unico workflow. Uscite ricorrenti del
+negozio, giri improvvisati del sabato, preparazione gara del club
+— tutto vive nello stesso semplice modello "uscite".
+
+TRADOTTA
+Pelori parla inglese, olandese, francese, spagnolo e italiano.
+Imposta la lingua del tuo account e l'intera app si ricostruisce.
+
+PRIVACY
+Pelori non vende i tuoi dati. Le coordinate non vengono conservate
+sul server. Le foto profilo sono in archiviazione privata con URL
+firmati. HTTPS ovunque, credenziali ruotate regolarmente. Policy
+completa su pelori.fit/privacy.
+
+COSA ARRIVA
+La chat vocale e la mappa di gruppo in tempo reale sono in
+sviluppo come parte di una futura versione Premium — parla con la
+crew e vedi chi è dove sul percorso, senza togliere le mani dal
+manubrio. La versione standard è gratuita e resta tale.
+
+Pedali da solo? Allora Pelori (ancora) non fa per te — prova
+Strava. Pelori è per chi parte insieme.
+
+— Il team Pelori
+hello@pelori.fit
+
+
+====================================================================
+3. PROMOTIONAL TEXT
+   App Store Connect → App Store → Localizzazione →
+   Testo promozionale (fino a 170 caratteri).
+====================================================================
+
+Pianifica uscite di gruppo, vedi chi viene, parla con la crew,
+trova uscite vicine. Quello che WhatsApp non fa bene — in un posto
+solo. Gratuita, cinque lingue.
+
+
+====================================================================
+4. KEYWORDS
+   App Store Connect → App Store → Localizzazione →
+   Parole chiave (fino a 100 caratteri totali, separate da
+   virgole, senza spazi dopo le virgole).
+====================================================================
+
+ciclismo,bici,bicicletta,gruppo,uscita,percorso,club,MTB,strada,gravel,crew,giro,team

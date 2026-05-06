@@ -1,17 +1,47 @@
-# Beta App Description copy
+# App Store + TestFlight copy, per locale
 
-Plain-text descriptions for App Store Connect → TestFlight → Test
-Information → Localizations. One file per supported locale.
+Plain-text store copy for App Store Connect. One file per supported
+locale; each file is a four-section bundle covering every text field
+the listing + TestFlight pages need.
 
-The TestFlight description field renders newlines but **no markdown**
-— anything you'd write as `**bold**` or `# heading` ends up on screen
-as literal asterisks / hashes. These files are kept in plain text so
-they paste straight into the form without manual cleanup.
+The folder is named `beta_description/` for historical reasons —
+the first version only carried the TestFlight Beta App Description
+— but each file now also holds the App Store Description,
+Promotional Text, and Keywords for that language.
+
+The fields render newlines but **no markdown** — anything you'd
+write as `**bold**` or `# heading` ends up on screen as literal
+asterisks / hashes. Files are kept in plain text so they paste
+straight into the App Store Connect forms without cleanup.
+
+## File format
+
+Each `<lang>.txt` is divided into four sections, each with its own
+banner explaining which App Store Connect field it maps to:
+
+```
+1. BETA APP DESCRIPTION   →  TestFlight → Test Information
+                             (≤ 10,000 chars; rarely changes)
+2. APP STORE DESCRIPTION  →  App Store → Localization
+                             (≤ 4,000 chars; long-form pitch)
+3. PROMOTIONAL TEXT       →  App Store → Localization
+                             (≤ 170 chars; editable without a
+                             new build, shown above the
+                             description on the listing)
+4. KEYWORDS               →  App Store → Localization
+                             (≤ 100 chars total, comma-separated,
+                             no spaces after commas — every char
+                             counts; avoid competitor names and
+                             "free"/"best" or Apple may reject)
+```
+
+Copy each section's body — between the closing `====` line and the
+next `====` banner — into the matching App Store Connect field.
 
 ## Folder layout
 
-Each round of the description copy lives in its own subfolder so we
-keep a paper trail across rewrites:
+Each round of the copy lives in its own subfolder so we keep a paper
+trail across rewrites:
 
 ```
 beta_description/
@@ -22,21 +52,22 @@ beta_description/
 │   ├── fr.txt
 │   ├── es.txt
 │   └── it.txt
-└── beta-2/             ← created when the description gets a rewrite
+└── beta-2/             ← created when the copy gets a rewrite
     └── …
 ```
 
 The numbering is independent of the TestFlight build number — bump
-to `beta-2/` only when the description copy itself changes. Most new
-builds just rotate the per-build "What to Test" field (separate to
-the description) and reuse whatever's in the latest `beta-N/`.
+to `beta-2/` only when the copy itself changes. Most new builds just
+rotate the per-build "What to Test" field (separate to everything in
+this folder) and reuse the latest `beta-N/` for the rest.
 
 ## How to use
 
-1. Open App Store Connect → Pelori → TestFlight → Test Information.
+1. Open App Store Connect → Pelori → TestFlight (for section 1) or
+   → App Store → Localization (for sections 2–4).
 2. Pick the language slot (English, Dutch, French, Spanish, Italian).
-3. Copy the matching `<latest>/<lang>.txt` body into "Beta App
-   Description".
+3. Open the matching `beta-1/<lang>.txt`, copy the relevant section's
+   body into the corresponding form field.
 4. Save.
 
 ## Editing rules
@@ -45,5 +76,9 @@ the description) and reuse whatever's in the latest `beta-N/`.
   copy, mirror the change in the other four. The marketing site
   already ships these languages and tonal drift between channels is
   jarring.
-- Watch the character count if you add features: TestFlight allows
-  10,000 chars but the join page only previews the first ~400.
+- The Promotional Text and Keywords have hard char ceilings; verify
+  with `wc -c` (or count manually) before pasting. Apple silently
+  rejects keyword strings that overflow.
+- Apple auto-pluralises keywords, so don't add both `bike` and
+  `bikes` — pick the singular and Apple covers both. Same for
+  upper/lower case.

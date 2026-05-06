@@ -1,3 +1,9 @@
+====================================================================
+1. BETA APP DESCRIPTION
+   App Store Connect → TestFlight → Test Information →
+   Beta App Description (max 10.000 tekens).
+====================================================================
+
 Pelori — alles wat een groepsrit echt nodig heeft
 
 Pelori is een fietsapp voor groepsritten. Hij regelt de vier dingen
@@ -44,3 +50,85 @@ Via het formulier in de app (Profiel → Feedback sturen) of door op
 elke TestFlight-mail te antwoorden. We lezen elk bericht.
 
 Bedankt dat je met ons meefietst. — Het Pelori-team
+
+
+====================================================================
+2. APP STORE DESCRIPTION
+   App Store Connect → App Store → Lokalisatie →
+   Beschrijving (max 4.000 tekens).
+====================================================================
+
+Pelori is de fietsapp voor groepsritten. Hij regelt de vier dingen
+waarover je vrienden voor elke rit appt: plan de rit, zie wie er
+komt, hou het gesprek op één plek, en vind nieuwe ritten in de
+buurt.
+
+RIT PLANNEN
+Datum, tijd, ontmoetingspin, terugkerend of eenmalig. "Elke dinsdag
+om 19:00" is één tik. Nodig je crew uit en de rit staat ergens waar
+iedereen hem kan vinden. Geen WhatsApp-polls meer screenshotten.
+
+PER KEER AANMELDEN
+Komt, komt niet, of misschien — antwoord per week. Tik op het
+aantal om te zien wie er komt. Reset elke zondag, zodat de vaste
+rijders dezelfde rit niet steeds opnieuw hoeven te boeken.
+
+ÉÉN GESPREK PER RIT
+Groepschat naast de rit waarbij hij hoort. Vervangt vijf
+overlappende groepschats door één conversatie, geordend zoals de
+ritten.
+
+ONTDEKKEN
+Publieke ritten van fietsclubs, fietswinkels en weekendcrews bij
+jou in de buurt. Bekijk de route en het ontmoetingspunt voordat je
+je vastlegt — één tik om mee te doen.
+
+GEMAAKT VOOR GROEPEN RIJDERS
+Of je nu rijdt met een club van vijftig of met drie vrienden,
+Pelori schaalt mee zonder je in één workflow te dwingen.
+Terugkerende winkelritten, spontane zaterdagloops,
+race-voorbereidingen van je club — allemaal in hetzelfde simpele
+"ritten"-model.
+
+GELOKALISEERD
+Pelori spreekt Engels, Nederlands, Frans, Spaans en Italiaans. Stel
+de taal van je account in en de hele app bouwt opnieuw op.
+
+PRIVACY EN JE GEGEVENS
+Pelori verkoopt je gegevens niet. Coördinaten worden niet
+server-side bewaard. Profielfoto's staan in privé-opslag met
+getekende URL's. We gebruiken overal HTTPS en roteren inloggegevens
+regelmatig. Lees het volledige beleid op pelori.fit/privacy.
+
+WAT ERAAN KOMT
+Voice-chat en live groepskaart zijn in ontwikkeling als onderdeel
+van een aankomende Premium-versie — praat met de crew en zie wie
+waar is op de route, handenvrij. De standaardversie is gratis en
+blijft gratis.
+
+Solo aan het rijden? Dan is Pelori nog niets voor jou — probeer
+Strava. Pelori is voor rijders die samen vertrekken.
+
+— Het Pelori-team
+hello@pelori.fit
+
+
+====================================================================
+3. PROMOTIONAL TEXT
+   App Store Connect → App Store → Lokalisatie →
+   Promotietekst (max 170 tekens).
+====================================================================
+
+Plan groepsritten, zie wie er komt, chat met de crew, vind ritten
+in de buurt. De vier dingen die WhatsApp niet goed kan — op één
+plek. Gratis, vijf talen.
+
+
+====================================================================
+4. KEYWORDS
+   App Store Connect → App Store → Lokalisatie →
+   Trefwoorden (max 100 tekens totaal, komma-gescheiden,
+   geen spaties na komma's).
+====================================================================
+
+fietsen,fiets,wielrennen,groepsrit,fietsclub,route,parcours,weg,gravel,MTB,racefiets,club,rit
