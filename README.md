@@ -8,8 +8,9 @@ step, deploys anywhere that serves files.
 ```
 pelori_website/
 ├── index.html        landing
-├── privacy.html      rendered from velora_app/docs/privacy.md
-├── terms.html        rendered from velora_app/docs/terms.md
+├── privacy.html         rendered from velora_app/docs/privacy.md
+├── terms.html           rendered from velora_app/docs/terms.md
+├── delete-account.html  rendered from velora_app/docs/delete_account.md
 ├── styles.css        brand styling (mirrors the in-app design tokens)
 ├── robots.txt
 ├── sitemap.xml
@@ -71,9 +72,10 @@ open http://localhost:8000
 
 ## Re-rendering legal pages
 
-`privacy.html` and `terms.html` are generated from
-`velora_app/docs/privacy.md` and `velora_app/docs/terms.md`. To
-regenerate after editing the source markdown:
+`privacy.html`, `terms.html`, and `delete-account.html` are
+generated from `velora_app/docs/privacy.md`,
+`velora_app/docs/terms.md`, and `velora_app/docs/delete_account.md`.
+To regenerate after editing any source markdown:
 
 ```bash
 python3 /tmp/render_legal.py

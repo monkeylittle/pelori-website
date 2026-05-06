@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete account — Pelori</title>
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="icon" href="assets/apple-touch-icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css?v=20260506">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-row">
+      <a href="/" class="lockup">
+        <img src="assets/logos/logo-mark.svg" alt="">
+        <span class="lockup-name">pelori</span>
+      </a>
+      <div class="nav-right">
+        <nav class="nav-links">
+          <a href="index.html#features" data-i18n="nav.features">Features</a>
+          <a href="index.html#beta" data-i18n="nav.beta">Beta</a>
+        </nav>
+        <div class="lang-picker" id="lang-picker">
+          <button type="button" id="lang-btn" class="lang-btn"
+                  aria-haspopup="listbox" aria-expanded="false"
+                  aria-label="Language">
+            <span id="lang-flag" class="lang-flag" aria-hidden="true"></span>
+            <span id="lang-name" class="lang-name"></span>
+            <svg class="lang-chevron" aria-hidden="true" viewBox="0 0 10 6">
+              <path fill="currentColor" d="M0 0l5 6 5-6z"/>
+            </svg>
+          </button>
+          <ul id="lang-menu" class="lang-menu" role="listbox" hidden></ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="legal-body">
+    <a href="index.html" class="legal-back" data-i18n="legal.back">&larr; Back to home</a>
+    <p class="legal-en-banner" data-legal-en-only data-i18n="legal.en_only" hidden>This page is available in English only — the app itself is fully localised.</p>
+    <h1>Delete your Pelori account</h1>
+<p>If you'd like to delete your Pelori account and the data we hold
+about you, here are the two ways to do it.</p>
+<h2>In the app (fastest)</h2>
+<ol>
+<li>Open Pelori on your iPhone or Android device.</li>
+<li>Sign in if you aren't already.</li>
+<li>Tap <strong>Profile</strong> in the bottom navigation.</li>
+<li>Scroll to the bottom and tap <strong>Delete account</strong>.</li>
+<li>Confirm.</li>
+</ol>
+<p>Deletion is immediate. The button removes your Cognito user, every
+ride you organise (and the membership / RSVP / chat / attendance
+rows tied to it), every membership you hold in someone else's ride,
+every chat message you have posted, every RSVP you have submitted,
+and your profile picture. It is not recoverable.</p>
+<h2>Email request (no app required)</h2>
+<p>If you no longer have the app installed or cannot sign in, email
+<strong>hello@pelori.fit</strong> from the email address linked to your Pelori
+account, with the subject line:</p>
+<blockquote>
+<p>Account deletion request</p>
+</blockquote>
+<p>Include "delete my account" anywhere in the body. We respond and
+process the deletion within <strong>30 days</strong> of receipt, in line with
+GDPR and CCPA timelines.</p>
+<h2>What we delete</h2>
+<ul>
+<li>Your Cognito user — email, name, date of birth, country,
+  preferred language, profile picture.</li>
+<li>Every ride you organised (and the membership / RSVP / chat /
+  attendance rows tied to it).</li>
+<li>Every membership you held in someone else's ride.</li>
+<li>Every chat message you posted.</li>
+<li>Every RSVP you submitted.</li>
+<li>Your profile picture from S3.</li>
+</ul>
+<h2>What we don't delete</h2>
+<ul>
+<li><strong>Anonymous analytics events.</strong> Firebase Analytics receives counts
+  of in-app actions (sign-up, screen views, RSVPs) tagged with an
+  anonymous Firebase instance ID, not your account. There is no way
+  to map an event back to a specific account, so deletion of these
+  events isn't applicable. They roll off automatically per Firebase's
+  default retention.</li>
+<li><strong>Anonymous crash diagnostics.</strong> Sentry holds anonymised crash
+  reports without identifying details and rolls them off after
+  90 days.</li>
+<li><strong>Operational logs.</strong> AWS CloudTrail and DynamoDB Streams retain
+  request metadata (timestamps, request IDs) that does not include
+  the contents of your account, kept per AWS defaults.</li>
+</ul>
+<h2>Questions</h2>
+<p>Email <strong>hello@pelori.fit</strong> and we'll come back to you.</p>
+  </main>
+  <footer>
+    <div class="container footer-row">
+      <span data-i18n="footer.copyright">© 2026 Pelori.</span>
+      <div class="footer-links">
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+        <a href="terms.html" data-i18n="footer.terms">Terms</a>
+        <a href="mailto:hello@pelori.fit" data-i18n="footer.contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/i18n.js"></script>
+</body>
+</html>
