@@ -135,3 +135,24 @@ endroit. Gratuite, cinq langues.
 ====================================================================
 
 vélo,cyclisme,sortie,groupe,club,parcours,itinéraire,route,gravel,VTT,peloton,team,bike
+
+
+====================================================================
+5. PLAY SHORT DESCRIPTION
+   Play Console → Grow users → Main store listing →
+   Description courte (max 80 caractères).
+====================================================================
+
+Planifie les sorties de groupe, vois qui vient, parle à l'équipe.
+
+
+====================================================================
+6. PLAY FULL DESCRIPTION
+   Play Console → Grow users → Main store listing →
+   Description complète (max 4 000 caractères).
+====================================================================
+
+Identique à la section 2 (APP STORE DESCRIPTION) ci-dessus. Colle le
+même texte dans le champ Description complète de Play — Apple et
+Google acceptent le même long-format, donc une seule modification de
+la section 2 couvre les deux stores.

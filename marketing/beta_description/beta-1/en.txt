@@ -130,3 +130,25 @@ in five languages.
 ====================================================================
 
 cycling,bike,bicycle,group ride,ride planner,club,route,gravel,road,mtb,crew,plan
+
+
+====================================================================
+5. PLAY SHORT DESCRIPTION
+   Play Console → Grow users → Main store listing →
+   Short description (max 80 chars). One-liner shown in search
+   results above the full description.
+====================================================================
+
+Plan group rides, RSVP, chat, find rides nearby. Built for cycling crews.
+
+
+====================================================================
+6. PLAY FULL DESCRIPTION
+   Play Console → Grow users → Main store listing →
+   Full description (max 4,000 chars).
+====================================================================
+
+Identical to Section 2 (APP STORE DESCRIPTION) above. Paste the same
+body into Play's Full description field — Apple and Google accept the
+same long-form pitch and keeping them in lock-step means one edit to
+Section 2 covers both stores.

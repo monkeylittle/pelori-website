@@ -16,27 +16,45 @@ straight into the App Store Connect forms without cleanup.
 
 ## File format
 
-Each `<lang>.txt` is divided into four sections, each with its own
-banner explaining which App Store Connect field it maps to:
+Each `<lang>.txt` is divided into six sections, each with its own
+banner explaining which app-store form field it maps to:
 
 ```
-1. BETA APP DESCRIPTION   →  TestFlight → Test Information
-                             (≤ 10,000 chars; rarely changes)
-2. APP STORE DESCRIPTION  →  App Store → Localization
-                             (≤ 4,000 chars; long-form pitch)
-3. PROMOTIONAL TEXT       →  App Store → Localization
-                             (≤ 170 chars; editable without a
-                             new build, shown above the
-                             description on the listing)
-4. KEYWORDS               →  App Store → Localization
-                             (≤ 100 chars total, comma-separated,
-                             no spaces after commas — every char
-                             counts; avoid competitor names and
-                             "free"/"best" or Apple may reject)
+Apple
+1. BETA APP DESCRIPTION    →  App Store Connect → TestFlight →
+                              Test Information
+                              (≤ 10,000 chars; rarely changes)
+2. APP STORE DESCRIPTION   →  App Store Connect → App Store →
+                              Localization → Description
+                              (≤ 4,000 chars; long-form pitch.
+                              Section 6 below points back here —
+                              same body covers Play too)
+3. PROMOTIONAL TEXT        →  App Store Connect → App Store →
+                              Localization → Promotional Text
+                              (≤ 170 chars; editable without a
+                              new build, shown above the
+                              description on the listing)
+4. KEYWORDS                →  App Store Connect → App Store →
+                              Localization → Keywords
+                              (≤ 100 chars total, comma-separated,
+                              no spaces after commas — every char
+                              counts; avoid competitor names and
+                              "free"/"best" or Apple may reject)
+
+Google
+5. PLAY SHORT DESCRIPTION  →  Play Console → Grow users → Main
+                              store listing → Short description
+                              (≤ 80 chars; one-liner above the
+                              full description)
+6. PLAY FULL DESCRIPTION   →  Play Console → Grow users → Main
+                              store listing → Full description
+                              (≤ 4,000 chars; identical body to
+                              Section 2 — Play has no separate
+                              keywords or promo-text fields)
 ```
 
 Copy each section's body — between the closing `====` line and the
-next `====` banner — into the matching App Store Connect field.
+next `====` banner — into the matching form field.
 
 ## Folder layout
 

@@ -132,3 +132,24 @@ plek. Gratis, vijf talen.
 ====================================================================
 
 fietsen,fiets,wielrennen,groepsrit,fietsclub,route,parcours,weg,gravel,MTB,racefiets,club,rit
+
+
+====================================================================
+5. PLAY SHORT DESCRIPTION
+   Play Console → Grow users → Main store listing →
+   Korte omschrijving (max 80 tekens).
+====================================================================
+
+Plan groepsritten, zie wie er komt, chat met de crew. Voor fietsclubs.
+
+
+====================================================================
+6. PLAY FULL DESCRIPTION
+   Play Console → Grow users → Main store listing →
+   Volledige omschrijving (max 4.000 tekens).
+====================================================================
+
+Identiek aan sectie 2 (APP STORE DESCRIPTION) hierboven. Plak dezelfde
+tekst in het volledige-omschrijving-veld van Play — Apple en Google
+accepteren dezelfde lange tekst, dus één bewerking van sectie 2 dekt
+beide stores.
