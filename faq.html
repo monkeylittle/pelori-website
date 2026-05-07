@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — Pelori</title>
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="icon" href="assets/apple-touch-icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css?v=20260507">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-row">
+      <a href="/" class="lockup">
+        <img src="assets/logos/logo-mark.svg" alt="">
+        <span class="lockup-name">pelori</span>
+      </a>
+      <div class="nav-right">
+        <nav class="nav-links">
+          <a href="index.html#features" data-i18n="nav.features">Features</a>
+          <a href="index.html#beta" data-i18n="nav.beta">Beta</a>
+        </nav>
+        <div class="lang-picker" id="lang-picker">
+          <button type="button" id="lang-btn" class="lang-btn"
+                  aria-haspopup="listbox" aria-expanded="false"
+                  aria-label="Language">
+            <span id="lang-flag" class="lang-flag" aria-hidden="true"></span>
+            <span id="lang-name" class="lang-name"></span>
+            <svg class="lang-chevron" aria-hidden="true" viewBox="0 0 10 6">
+              <path fill="currentColor" d="M0 0l5 6 5-6z"/>
+            </svg>
+          </button>
+          <ul id="lang-menu" class="lang-menu" role="listbox" hidden></ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="legal-body">
+    <a href="index.html" class="legal-back" data-i18n="legal.back">&larr; Back to home</a>
+    <p class="legal-en-banner" data-legal-en-only data-i18n="legal.en_only" hidden>This page is available in English only — the app itself is fully localised.</p>
+    <h1>FAQ</h1>
+
+    <h2>What happens to a ride that nobody uses for a while?</h2>
+    <p>To stop Discover and notifications filling up with rides that have
+    gone quiet, every ride moves through three stages based on the time
+    since its last human interaction. A human interaction is anything a
+    member does inside the ride — sending a chat message, RSVPing,
+    joining or leaving, or the owner editing settings. The next
+    occurrence of a recurring ride silently rolling forward does
+    <strong>not</strong> count.</p>
+
+    <h2>Stage 1 — Dormant (after 90 days inactive)</h2>
+    <ul>
+      <li>The ride is hidden from <strong>Discover</strong>, so new riders
+        won't stumble across a public ride that's gone quiet.</li>
+      <li>Members still see the ride in <em>My Rides</em>, can chat,
+        RSVP, share location, and join voice as normal.</li>
+      <li>Push and reminder notifications fire as normal.</li>
+      <li>Any interaction — a chat message, an RSVP, an owner edit —
+        flips the ride straight back to active and resets the clock.</li>
+    </ul>
+
+    <h2>Stage 2 — Archived (after 180 days inactive)</h2>
+    <ul>
+      <li>The ride becomes invisible to everyone except the owner. Other
+        members no longer see it in <em>My Rides</em> and can't open it.</li>
+      <li>All notifications stop firing, including RSVP nags and going
+        reminders.</li>
+      <li>The ride is also hidden from Discover (a stricter version of
+        the dormant rule).</li>
+      <li>The owner can still open the ride and edit it. Saving any edit
+        flips it back to active, restores it to other members, and
+        resumes notifications.</li>
+    </ul>
+
+    <h2>Stage 3 — Deleted (after 270 days inactive)</h2>
+    <ul>
+      <li>The ride and its memberships, messages, and RSVP records are
+        permanently deleted.</li>
+      <li>Deletion is not recoverable. If you want to keep an archived
+        ride, open it as the owner and save any edit before it reaches
+        the 270-day mark — that resets the clock.</li>
+    </ul>
+
+    <h2>How do I keep a ride active?</h2>
+    <p>Ride with it. Anything that counts as a human interaction resets
+    the clock back to zero, so a ride that the crew actually uses each
+    week never goes dormant.</p>
+
+    <h2>Can I tell whether one of my rides is dormant or archived?</h2>
+    <p>Yes — dormant and archived rides show a small badge on the ride
+    card in <em>My Rides</em>.</p>
+  </main>
+  <footer>
+    <div class="container footer-row">
+      <span data-i18n="footer.copyright">&copy; 2026 Pelori.</span>
+      <div class="footer-links">
+        <a href="faq.html" data-i18n="footer.faq">FAQ</a>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+        <a href="terms.html" data-i18n="footer.terms">Terms</a>
+        <a href="mailto:hello@pelori.fit" data-i18n="footer.contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/i18n.js"></script>
+</body>
+</html>
