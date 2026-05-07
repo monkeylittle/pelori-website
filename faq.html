@@ -6,7 +6,7 @@
   <title>FAQ — Pelori</title>
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="icon" href="assets/apple-touch-icon.png" type="image/png">
-  <link rel="stylesheet" href="styles.css?v=20260507">
+  <link rel="stylesheet" href="styles.css?v=20260508">
 </head>
 <body>
   <header class="nav">
@@ -41,90 +41,104 @@
     <p class="legal-en-banner" data-legal-en-only data-i18n="legal.en_only" hidden>This page is available in English only — the app itself is fully localised.</p>
     <h1>FAQ</h1>
 
-    <h2>What happens to a ride that nobody uses for a while?</h2>
-    <p>To stop Discover and notifications filling up with rides that have
-    gone quiet, every ride moves through three stages based on the time
-    since its last human interaction. A human interaction is anything a
-    member does inside the ride — sending a chat message, RSVPing,
-    joining or leaving, or the owner editing settings. The next
-    occurrence of a recurring ride silently rolling forward does
-    <strong>not</strong> count.</p>
+    <details class="faq-item">
+      <summary>What happens to a ride that nobody uses for a while?</summary>
+      <div class="faq-body">
+        <p>To stop Discover and notifications filling up with rides that
+        have gone quiet, every ride moves through three stages based on
+        the time since its last human interaction. A human interaction
+        is anything a member does inside the ride — sending a chat
+        message, RSVPing, joining or leaving, or the owner editing
+        settings. The next occurrence of a recurring ride silently
+        rolling forward does <strong>not</strong> count.</p>
 
-    <h2>Stage 1 — Dormant (after 90 days inactive)</h2>
-    <ul>
-      <li>The ride is hidden from <strong>Discover</strong>, so new riders
-        won't stumble across a public ride that's gone quiet.</li>
-      <li>Members still see the ride in <em>My Rides</em>, can chat,
-        RSVP, share location, and join voice as normal.</li>
-      <li>Push and reminder notifications fire as normal.</li>
-      <li>Any interaction — a chat message, an RSVP, an owner edit —
-        flips the ride straight back to active and resets the clock.</li>
-    </ul>
+        <h3>Stage 1 — Dormant (after 90 days inactive)</h3>
+        <ul>
+          <li>The ride is hidden from <strong>Discover</strong>, so new
+            riders won't stumble across a public ride that's gone
+            quiet.</li>
+          <li>Members still see the ride in <em>My Rides</em>, can chat,
+            RSVP, share location, and join voice as normal.</li>
+          <li>Push and reminder notifications fire as normal.</li>
+          <li>Any interaction — a chat message, an RSVP, an owner edit —
+            flips the ride straight back to active and resets the
+            clock.</li>
+        </ul>
 
-    <h2>Stage 2 — Archived (after 180 days inactive)</h2>
-    <ul>
-      <li>The ride becomes invisible to everyone except the owner. Other
-        members no longer see it in <em>My Rides</em> and can't open it.</li>
-      <li>All notifications stop firing, including RSVP nags and going
-        reminders.</li>
-      <li>The ride is also hidden from Discover (a stricter version of
-        the dormant rule).</li>
-      <li>The owner can still open the ride and edit it. Saving any edit
-        flips it back to active, restores it to other members, and
-        resumes notifications.</li>
-    </ul>
+        <h3>Stage 2 — Archived (after 180 days inactive)</h3>
+        <ul>
+          <li>The ride becomes invisible to everyone except the owner.
+            Other members no longer see it in <em>My Rides</em> and
+            can't open it.</li>
+          <li>All notifications stop firing, including RSVP nags and
+            going reminders.</li>
+          <li>The ride is also hidden from Discover (a stricter version
+            of the dormant rule).</li>
+          <li>The owner can still open the ride and edit it. Saving any
+            edit flips it back to active, restores it to other members,
+            and resumes notifications.</li>
+        </ul>
 
-    <h2>Stage 3 — Deleted (after 270 days inactive)</h2>
-    <ul>
-      <li>The ride and its memberships, messages, and RSVP records are
-        permanently deleted.</li>
-      <li>Deletion is not recoverable. If you want to keep an archived
-        ride, open it as the owner and save any edit before it reaches
-        the 270-day mark — that resets the clock.</li>
-    </ul>
+        <h3>Stage 3 — Deleted (after 270 days inactive)</h3>
+        <ul>
+          <li>The ride and its memberships, messages, and RSVP records
+            are permanently deleted.</li>
+          <li>Deletion is not recoverable. If you want to keep an
+            archived ride, open it as the owner and save any edit
+            before it reaches the 270-day mark — that resets the
+            clock.</li>
+        </ul>
 
-    <h2>How do I keep a ride active?</h2>
-    <p>Ride with it. Anything that counts as a human interaction resets
-    the clock back to zero, so a ride that the crew actually uses each
-    week never goes dormant.</p>
+        <h3>How do I keep a ride active?</h3>
+        <p>Ride with it. Anything that counts as a human interaction
+        resets the clock back to zero, so a ride that the crew actually
+        uses each week never goes dormant.</p>
 
-    <h2>Can I tell whether one of my rides is dormant or archived?</h2>
-    <p>Yes — dormant and archived rides show a small badge on the ride
-    card in <em>My Rides</em>.</p>
+        <h3>Can I tell whether one of my rides is dormant or archived?</h3>
+        <p>Yes — dormant and archived rides show a small badge on the
+        ride card in <em>My Rides</em>.</p>
+      </div>
+    </details>
 
-    <h2>What does the "Inactive" badge on a member mean?</h2>
-    <p>Each member of a ride has a small <strong>Inactive</strong> chip on
-    their row when they haven't opened the Pelori app for 30 days or
-    more. It's a glanceable signal for the organiser — useful when
-    deciding whether it's worth nagging someone for an RSVP, or when
-    looking through who's actually still around. As soon as the
-    member opens the app the chip disappears on the next refresh.</p>
+    <details class="faq-item">
+      <summary>How are inactive members handled?</summary>
+      <div class="faq-body">
+        <h3>What does the "Inactive" badge on a member mean?</h3>
+        <p>Each member of a ride has a small <strong>Inactive</strong>
+        chip on their row when they haven't opened the Pelori app for
+        30 days or more. It's a glanceable signal for the organiser —
+        useful when deciding whether it's worth nagging someone for an
+        RSVP, or when looking through who's actually still around. As
+        soon as the member opens the app the chip disappears on the
+        next refresh.</p>
 
-    <p>Members who are brand-new to the feature (no recorded activity
-    yet) don't get the chip — the absence of data is treated as
-    "unknown", not "inactive".</p>
+        <p>Members who are brand-new to the feature (no recorded
+        activity yet) don't get the chip — the absence of data is
+        treated as "unknown", not "inactive".</p>
 
-    <h2>Can I have inactive members removed automatically?</h2>
-    <p>Yes. In <em>Ride settings → Who</em>, the ride owner has an
-    <strong>Auto-remove inactive members</strong> toggle. Switch it on
-    and once a day Pelori removes any member who hasn't opened the app
-    in 30 days. A few rules:</p>
-    <ul>
-      <li>The toggle is <strong>owner-only</strong>. Admins manage
-        rides day-to-day, but membership policy stays with the
-        creator.</li>
-      <li>The owner is never removed, even if they themselves haven't
-        opened the app — a ride should never end up without its
-        organiser.</li>
-      <li>Members who haven't recorded any activity yet (e.g. someone
-        who joined and immediately uninstalled before the activity
-        signal landed) are left alone — same conservative reading as
-        the badge.</li>
-      <li>Pending invitations are not touched. Someone who hasn't
-        accepted yet stays in the invite list until they decide.</li>
-      <li>Removed members can always be re-invited. Removal isn't a
-        ban — it's a tidy-up.</li>
-    </ul>
+        <h3>Can I have inactive members removed automatically?</h3>
+        <p>Yes. In <em>Ride settings → Who</em>, the ride owner has an
+        <strong>Auto-remove inactive members</strong> toggle. Switch it
+        on and once a day Pelori removes any member who hasn't opened
+        the app in 30 days. A few rules:</p>
+        <ul>
+          <li>The toggle is <strong>owner-only</strong>. Admins manage
+            rides day-to-day, but membership policy stays with the
+            creator.</li>
+          <li>The owner is never removed, even if they themselves
+            haven't opened the app — a ride should never end up without
+            its organiser.</li>
+          <li>Members who haven't recorded any activity yet (e.g.
+            someone who joined and immediately uninstalled before the
+            activity signal landed) are left alone — same conservative
+            reading as the badge.</li>
+          <li>Pending invitations are not touched. Someone who hasn't
+            accepted yet stays in the invite list until they decide.</li>
+          <li>Removed members can always be re-invited. Removal isn't a
+            ban — it's a tidy-up.</li>
+        </ul>
+      </div>
+    </details>
   </main>
   <footer>
     <div class="container footer-row">

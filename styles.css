@@ -532,6 +532,71 @@ footer {
   border-radius: 6px;
 }
 
+/* ─── FAQ accordion ─────────────────────────────────────────────
+   Native <details>/<summary> with a card look. Browsers handle the
+   open/close state for free; we just paint the chrome. */
+.faq-item {
+  border: 1px solid var(--neutral-200);
+  border-radius: 12px;
+  background: var(--neutral-0);
+  margin: 0 0 12px;
+  overflow: hidden;
+}
+
+.faq-item > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 18px 20px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.2px;
+  color: var(--neutral-900);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.faq-item > summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item > summary::after {
+  content: "";
+  flex: 0 0 auto;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid var(--neutral-500);
+  border-bottom: 2px solid var(--neutral-500);
+  transform: rotate(45deg);
+  transition: transform 160ms ease;
+  margin-top: -4px;
+}
+
+.faq-item[open] > summary::after {
+  transform: rotate(-135deg);
+  margin-top: 4px;
+}
+
+.faq-body {
+  padding: 0 20px 18px;
+  border-top: 1px solid var(--neutral-200);
+}
+
+.faq-body > *:first-child {
+  margin-top: 16px;
+}
+
+.faq-body h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: -0.15px;
+  margin: 24px 0 8px;
+  color: var(--neutral-900);
+}
+
 /* ─── Mobile tweaks ────────────────────────────────────────────── */
 
 @media (max-width: 540px) {
