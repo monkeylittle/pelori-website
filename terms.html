@@ -6,7 +6,7 @@
   <title>Terms of Service — Pelori</title>
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="icon" href="assets/apple-touch-icon.png" type="image/png">
-  <link rel="stylesheet" href="styles.css?v=20260506">
+  <link rel="stylesheet" href="styles.css?v=20260508">
 </head>
 <body>
   <header class="nav">
@@ -33,8 +33,21 @@
           </button>
           <ul id="lang-menu" class="lang-menu" role="listbox" hidden></ul>
         </div>
+        <button type="button" class="nav-burger" id="nav-burger"
+                aria-label="Open menu" aria-controls="nav-drawer" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/>
+          </svg>
+        </button>
       </div>
     </div>
+    <aside class="nav-drawer" id="nav-drawer" aria-hidden="true">
+      <button type="button" class="nav-drawer-close" data-nav-close
+              aria-label="Close menu">&times;</button>
+      <a href="index.html#features" data-i18n="nav.features" data-nav-close>Features</a>
+      <a href="index.html#beta" data-i18n="nav.beta" data-nav-close>Beta</a>
+      <a href="faq.html" data-i18n="nav.faq" data-nav-close>FAQ</a>
+    </aside>
   </header>
   <main class="legal-body">
     <a href="index.html" class="legal-back" data-i18n="legal.back">&larr; Back to home</a>
@@ -106,6 +119,7 @@ Pelori after a change means you accept the new terms.</p>
       <span data-i18n="footer.copyright">© 2026 Pelori.</span>
       <div class="footer-links">
         <a href="faq.html" data-i18n="footer.faq">FAQ</a>
+        <a href="whats-new.html" data-i18n="footer.whatsNew">What's new</a>
         <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
         <a href="terms.html" data-i18n="footer.terms">Terms</a>
         <a href="mailto:hello@pelori.fit" data-i18n="footer.contact">Contact</a>
@@ -113,5 +127,6 @@ Pelori after a change means you accept the new terms.</p>
     </div>
   </footer>
   <script src="assets/i18n.js"></script>
+  <script src="assets/nav-drawer.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://pelori.fit/</loc><priority>1.0</priority></url>
   <url><loc>https://pelori.fit/faq.html</loc><priority>0.6</priority></url>
+  <url><loc>https://pelori.fit/whats-new.html</loc><priority>0.6</priority></url>
   <url><loc>https://pelori.fit/privacy.html</loc><priority>0.5</priority></url>
   <url><loc>https://pelori.fit/terms.html</loc><priority>0.5</priority></url>
 </urlset>

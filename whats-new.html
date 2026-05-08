@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's new — Pelori</title>
+  <meta name="description" content="Recent feature drops in the Pelori beta — push notification preferences, ride lifecycle, inactive-member badges, and more.">
+  <meta name="theme-color" content="#0066FF">
+  <meta property="og:title" content="What's new in Pelori">
+  <meta property="og:description" content="Recent feature drops in the Pelori beta.">
+  <meta property="og:url" content="https://pelori.fit/whats-new.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://pelori.fit/assets/og-cover.svg">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="icon" href="assets/apple-touch-icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css?v=20260508">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-row">
+      <a href="/" class="lockup">
+        <img src="assets/logos/logo-mark.svg" alt="">
+        <span class="lockup-name">pelori</span>
+      </a>
+      <div class="nav-right">
+        <nav class="nav-links">
+          <a href="index.html#features" data-i18n="nav.features">Features</a>
+          <a href="index.html#beta" data-i18n="nav.beta">Beta</a>
+          <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+        </nav>
+        <div class="lang-picker" id="lang-picker">
+          <button type="button" id="lang-btn" class="lang-btn"
+                  aria-haspopup="listbox" aria-expanded="false"
+                  aria-label="Language">
+            <span id="lang-flag" class="lang-flag" aria-hidden="true"></span>
+            <span id="lang-name" class="lang-name"></span>
+            <svg class="lang-chevron" aria-hidden="true" viewBox="0 0 10 6">
+              <path fill="currentColor" d="M0 0l5 6 5-6z"/>
+            </svg>
+          </button>
+          <ul id="lang-menu" class="lang-menu" role="listbox" hidden></ul>
+        </div>
+        <button type="button" class="nav-burger" id="nav-burger"
+                aria-label="Open menu" aria-controls="nav-drawer" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <aside class="nav-drawer" id="nav-drawer" aria-hidden="true">
+      <button type="button" class="nav-drawer-close" data-nav-close
+              aria-label="Close menu">&times;</button>
+      <a href="index.html#features" data-i18n="nav.features" data-nav-close>Features</a>
+      <a href="index.html#beta" data-i18n="nav.beta" data-nav-close>Beta</a>
+      <a href="faq.html" data-i18n="nav.faq" data-nav-close>FAQ</a>
+    </aside>
+  </header>
+  <main class="legal-body">
+    <a href="index.html" class="legal-back" data-i18n="legal.back">&larr; Back to home</a>
+    <p class="legal-en-banner" data-legal-en-only data-i18n="legal.en_only" hidden>This page is available in English only — the app itself is fully localised.</p>
+    <h1>What's new</h1>
+    <p>Pelori is in active beta. Here's what's shipped recently, newest
+    first. We'll add a version label to each entry once 1.0.0 is out.</p>
+
+    <article class="changelog-entry">
+      <p class="changelog-date">May 2026</p>
+      <h2>Settings tab + About page</h2>
+      <p>The bottom-nav "Profile" tab is now <strong>Settings</strong>,
+      grouped under a gear icon. Inside, a new <em>About</em> tab
+      gathers feedback, data export, the legal links, and a brand
+      About dialog showing the build's version. The Delete account
+      button moves here too. The first tab keeps your account fields
+      (name, language, country, sign out).</p>
+    </article>
+
+    <article class="changelog-entry">
+      <p class="changelog-date">May 2026</p>
+      <h2>App version on the splash + About dialog</h2>
+      <p>The brief loading screen between the launch animation and the
+      first ride list now shows the wordmark, a spinner, and the
+      installed version number. Tapping <em>Settings → About → About
+      Pelori</em> opens a dialog with the same version + the open
+      source licenses Pelori bundles.</p>
+    </article>
+
+    <article class="changelog-entry">
+      <p class="changelog-date">May 2026</p>
+      <h2>Per-category notification controls</h2>
+      <p>Profile → Notifications has four new toggles so you can opt
+      out of any push category individually: <strong>ride
+      reminders</strong>, <strong>RSVP responses</strong>,
+      <strong>chat messages</strong>, and <strong>schedule changes</strong>.
+      Three of those are new pushes too — the only one we sent before
+      was the timed reminders. Defaults are all on; opt out of what
+      you don't want, the rest keep flowing.</p>
+    </article>
+
+    <article class="changelog-entry">
+      <p class="changelog-date">May 2026</p>
+      <h2>Inactive-member badge + auto-remove toggle</h2>
+      <p>A new <strong>Inactive</strong> chip appears on a member's
+      row in the ride if they haven't opened Pelori for 30 days — a
+      glanceable signal for organisers chasing RSVPs. Ride owners can
+      flip on <em>Auto-remove inactive members</em> in Ride settings →
+      Who, and once a day Pelori prunes anyone who's gone quiet.
+      Owners are exempt; pending invitees are skipped; brand-new
+      members with no activity yet are left alone.</p>
+      <p>Full rules on the <a href="faq.html">FAQ page</a>.</p>
+    </article>
+
+    <article class="changelog-entry">
+      <p class="changelog-date">May 2026</p>
+      <h2>Ride lifecycle: dormant → archived → deleted</h2>
+      <p>Rides that go quiet now move through three stages instead of
+      lingering in Discover forever. After 90 days without activity a
+      ride goes <strong>dormant</strong> (hidden from Discover, members
+      keep full access). After 180 days it's <strong>archived</strong>
+      (invisible to everyone except the owner; notifications stop). At
+      270 days the ride and its history are <strong>deleted</strong>.
+      Any human interaction at any stage flips the ride straight back
+      to active and resets the clock.</p>
+      <p>Full rules on the <a href="faq.html">FAQ page</a>.</p>
+    </article>
+
+    <article class="changelog-entry">
+      <p class="changelog-date">May 2026</p>
+      <h2>Push notifications</h2>
+      <p>Server-side push for time-sensitive ride moments. Per-ride
+      organisers set RSVP-nag and going-reminder lead times in hours;
+      Pelori fires the matching push at the right time. Foreground
+      delivery uses a high-priority FCM channel so the banner appears
+      immediately rather than batching under the OS doze rules.</p>
+    </article>
+
+    <article class="changelog-entry">
+      <p class="changelog-date">April 2026</p>
+      <h2>Open beta</h2>
+      <p>iOS via TestFlight, Android via Google Play Internal Testing.
+      First wave of feedback shaping what ships next.</p>
+    </article>
+  </main>
+  <footer>
+    <div class="container footer-row">
+      <span data-i18n="footer.copyright">&copy; 2026 Pelori.</span>
+      <div class="footer-links">
+        <a href="faq.html" data-i18n="footer.faq">FAQ</a>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+        <a href="terms.html" data-i18n="footer.terms">Terms</a>
+        <a href="mailto:hello@pelori.fit" data-i18n="footer.contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/i18n.js"></script>
+  <script src="assets/nav-drawer.js"></script>
+</body>
+</html>
