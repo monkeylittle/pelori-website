@@ -5,7 +5,7 @@ brand background is composited on top. Captures from here feed into
 `marketing/screenshots/composed-6.9/<lang>/` via `composer.py`.
 
 The captures themselves come out of the Flutter app — `flutter run`
-lives in the `velora_app` repo (sibling of this one). Run the
+lives in the `pelori_app` repo (sibling of this one). Run the
 simulator there, capture each panel, then drop the PNGs into the
 `raw/6.9-inch/<lang>/` directories in this repo.
 

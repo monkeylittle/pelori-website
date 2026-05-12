@@ -8,9 +8,9 @@ step, deploys anywhere that serves files.
 ```
 pelori_website/
 ├── index.html        landing
-├── privacy.html         rendered from velora_app/docs/privacy.md
-├── terms.html           rendered from velora_app/docs/terms.md
-├── delete-account.html  rendered from velora_app/docs/delete_account.md
+├── privacy.html         rendered from pelori_app/docs/privacy.md
+├── terms.html           rendered from pelori_app/docs/terms.md
+├── delete-account.html  rendered from pelori_app/docs/delete_account.md
 ├── styles.css        brand styling (mirrors the in-app design tokens)
 ├── robots.txt
 ├── sitemap.xml
@@ -76,17 +76,18 @@ open http://localhost:8000
 ## Re-rendering legal pages
 
 `privacy.html`, `terms.html`, and `delete-account.html` are
-generated from `velora_app/docs/privacy.md`,
-`velora_app/docs/terms.md`, and `velora_app/docs/delete_account.md`.
+generated from `pelori_app/docs/privacy.md`,
+`pelori_app/docs/terms.md`, and `pelori_app/docs/delete_account.md`.
 To regenerate after editing any source markdown:
 
 ```bash
-python3 /tmp/render_legal.py
+python3 scripts/render_legal.py
 ```
 
-(That script lives in /tmp and just wraps the markdown body in the
-site's HTML chrome. Re-run anytime the source changes; commit the
-resulting .html files.)
+The script wraps each markdown body in the site's standard HTML
+chrome — pure stdlib, no dependencies. Re-run anytime a source
+changes; commit the regenerated `.html` files alongside the
+markdown edit so the published page tracks the source of truth.
 
 ## Adding or editing translations
 
@@ -194,7 +195,7 @@ If you add e.g. `blog.html`:
    .lang-flag.lang-de { background-image: url('assets/flags/de.svg'); }
    ```
 4. (Optional) Update the app's ARBs in
-   `velora_app/lib/l10n/` if you want the in-app and the marketing
+   `pelori_app/lib/l10n/` if you want the in-app and the marketing
    site to ship the same language set. The lists aren't coupled at
    runtime — they're only "the same" by convention.
 
@@ -208,7 +209,7 @@ why. Translating GDPR / CCPA-flavoured copy needs more care than
 marketing strings; treat it as a separate exercise (and probably
 one with a lawyer in the loop).
 
-The body comes from `velora_app/docs/privacy.md` /
+The body comes from `pelori_app/docs/privacy.md` /
 `docs/terms.md` via `/tmp/render_legal.py` — the Markdown gets
 wrapped in the same chrome template every time, so re-running
 the renderer carries any chrome changes from the template into

@@ -22,7 +22,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parent
 FONT_DIR = ROOT / 'fonts'
-ICON_FG = ROOT.parent.parent / 'velora_app' / 'assets' / 'icon_foreground.png'
+ICON_FG = ROOT.parent.parent / 'pelori_app' / 'assets' / 'icon_foreground.png'
 OUT = ROOT / 'feature_graphic.png'
 
 # Brand tokens — mirror composer.py + the in-app design system.
