@@ -53,7 +53,7 @@
     <a href="index.html" class="legal-back" data-i18n="legal.back">&larr; Back to home</a>
     <p class="legal-en-banner" data-legal-en-only data-i18n="legal.en_only" hidden>This page is available in English only — the app itself is fully localised.</p>
     <h1>Pelori Privacy Policy</h1>
-<p><strong>Last updated:</strong> 6 May 2026</p>
+<p><strong>Last updated:</strong> 12 May 2026</p>
 <p>Pelori ("we", "us") makes a ride-coordination app for cyclists. You
 use it to plan group rides with friends, RSVP per occurrence, chat
 with the crew, and find public rides nearby. This policy explains
@@ -105,12 +105,37 @@ what we collect, how we use it, and the controls you have.</p>
   than your account; we do not pass your name, email, or Cognito
   user ID to Firebase.</li>
 </ul>
+<h3>Friend connections</h3>
+<p>Pelori lets you add other users as friends so you can invite them
+into rides with one tap rather than typing their email each time.</p>
+<ul>
+<li><strong>What another user sees about you.</strong> When you appear to someone
+  else as a friend, a sent or received friend request, a friend
+  suggestion, or an email-search result, they see your name, your
+  profile picture if you've uploaded one, and your country (a
+  two-letter ISO code, e.g. <code>GB</code>). Your email address, your date of
+  birth, and your location are not exposed on any of these surfaces.</li>
+<li><strong>How someone can find you.</strong> Two routes only: anyone you share
+  at least one ride membership with may see you as a suggestion in
+  their <em>Add friends</em> tab, and anyone who already knows your exact
+  email address can look you up via email search. Pelori does
+  <strong>not</strong> read your phone contacts or address book.</li>
+<li><strong>Blocking.</strong> You can block another user from a chat-message
+  long-press. Blocking is bidirectional: each user's chat messages
+  and rides become invisible to the other, any existing friendship
+  is removed, neither appears to the other as a friend suggestion,
+  and neither can send the other a friend request. You can see and
+  unblock anyone you've blocked in <em>Profile → Blocked users</em>.</li>
+</ul>
 <h3>Notifications (optional)</h3>
 <p>If you grant the system notification permission, Pelori sends two
 kinds of push reminder per ride: a "did you RSVP?" nudge to anyone
 who hasn't replied, and a pre-ride "the ride is coming up" reminder
 to anyone going. Both are configured per-ride by the organiser
-(disabled by default), and both are delivered via Firebase Cloud
+(disabled by default). Pelori also sends two friend-related pushes:
+one when another user sends you a friend request, and one when
+someone accepts a request you sent. (Declining a request does not
+send a push.) All notifications are delivered via Firebase Cloud
 Messaging. Your device's push token is stored on our side paired
 with your account so the scheduler can route to it; it's removed
 when you sign out, delete your account, or revoke the permission
