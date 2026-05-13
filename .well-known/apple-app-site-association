@@ -4,7 +4,7 @@
     "details": [
       {
         "appID": "U2D4FG73A9.com.monkeylittle.pelori",
-        "paths": ["/rides/*"]
+        "paths": ["/rides/*", "/i/*"]
       }
     ]
   }
