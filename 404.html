@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pelori</title>
+  <meta name="description" content="Open this Pelori ride invite.">
+  <meta name="theme-color" content="#0066FF">
+  <!-- Apple/Android Universal Links / App Links are evaluated by the
+       OS before this page is fetched. We only render when the user
+       doesn't have the app installed (or the path didn't match an
+       AASA pattern). 404 is hosting-agnostic — GitHub Pages / S3 /
+       Cloudflare all serve this file for unknown paths. -->
+  <meta name="robots" content="noindex,nofollow">
+
+  <meta name="apple-mobile-web-app-title" content="Pelori">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <meta property="og:title" content="Pelori — Group cycling, planned together">
+  <meta property="og:description" content="Plan group rides, RSVP per week, chat with the crew, and find new rides nearby.">
+  <meta property="og:url" content="https://pelori.fit">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://pelori.fit/assets/og-cover.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Pelori — Group cycling, planned together">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/apple-touch-icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css?v=20260508">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-row">
+      <a href="/" class="lockup">
+        <img src="assets/logos/logo-mark.svg" alt="">
+        <span class="lockup-name">pelori</span>
+      </a>
+      <div class="nav-right">
+        <nav class="nav-links">
+          <a href="index.html#features" data-i18n="nav.features">Features</a>
+          <a href="index.html#beta" data-i18n="nav.beta">Beta</a>
+          <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+        </nav>
+        <div class="lang-picker" id="lang-picker">
+          <button type="button" id="lang-btn" class="lang-btn"
+                  aria-haspopup="listbox" aria-expanded="false"
+                  aria-label="Language">
+            <span id="lang-flag" class="lang-flag" aria-hidden="true"></span>
+            <span id="lang-name" class="lang-name"></span>
+            <svg class="lang-chevron" aria-hidden="true" viewBox="0 0 10 6">
+              <path fill="currentColor" d="M0 0l5 6 5-6z"/>
+            </svg>
+          </button>
+          <ul id="lang-menu" class="lang-menu" role="listbox" hidden></ul>
+        </div>
+        <button type="button" class="nav-burger" id="nav-burger"
+                aria-label="Open menu" aria-controls="nav-drawer" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <aside class="nav-drawer" id="nav-drawer" aria-hidden="true">
+      <button type="button" class="nav-drawer-close" data-nav-close
+              aria-label="Close menu">&times;</button>
+      <a href="index.html#features" data-i18n="nav.features" data-nav-close>Features</a>
+      <a href="index.html#beta" data-i18n="nav.beta" data-nav-close>Beta</a>
+      <a href="faq.html" data-i18n="nav.faq" data-nav-close>FAQ</a>
+    </aside>
+  </header>
+
+  <!-- Two mutually exclusive sections. The inline script below picks
+       one based on the URL: /i/<token> -> invite landing, anything
+       else -> not-found. Both default to hidden so a JS-disabled
+       browser at /i/<token> sees the generic not-found instead of
+       a broken-looking blank page. Pelori is in beta on TestFlight
+       and Play; the only path here without JS is essentially
+       "human typed the URL wrong", so the not-found copy is fine. -->
+
+  <section id="invite-landing" class="hero" hidden>
+    <div class="container">
+      <h1 data-i18n="invite.title">Open this ride in Pelori</h1>
+      <p class="hero-sub" data-i18n="invite.body">
+        Tap the button below to open the invite in the Pelori app. If
+        you don't have it yet, install Pelori first — the link will
+        keep working.
+      </p>
+      <div class="hero-ctas">
+        <a id="invite-open" class="btn btn-primary" href="#" data-i18n="invite.open">
+          Open in Pelori
+        </a>
+      </div>
+      <div class="hero-ctas" id="invite-stores">
+        <a id="invite-store-ios" class="btn btn-primary"
+           href="https://testflight.apple.com/join/AMZ3g1j7" hidden>
+          <svg width="18" height="20" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true">
+            <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+          </svg>
+          <span data-i18n="invite.get_ios">Get Pelori on iOS</span>
+        </a>
+        <a id="invite-store-android" class="btn btn-primary"
+           href="PLACEHOLDER_PLAY_URL" data-i18n="invite.get_android" hidden>
+          Get Pelori on Android
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="not-found" class="hero" hidden>
+    <div class="container">
+      <h1 data-i18n="notfound.title">Page not found</h1>
+      <p class="hero-sub" data-i18n="notfound.body">
+        We couldn't find that page. The link may have been mistyped or
+        moved.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="/" data-i18n="notfound.home">
+          Back to home
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-row">
+      <span data-i18n="footer.copyright">© 2026 Pelori. Made for riders who roll out together.</span>
+      <div class="footer-links">
+        <a href="faq.html" data-i18n="footer.faq">FAQ</a>
+        <a href="whats-new.html" data-i18n="footer.whatsNew">What's new</a>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+        <a href="terms.html" data-i18n="footer.terms">Terms</a>
+        <a href="mailto:hello@pelori.fit" data-i18n="footer.contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Decide which section to render based on the URL the visitor
+    // landed on. /i/<token> is the invite landing; everything else
+    // gets a tidy "page not found". The token regex matches the
+    // server-side INVITE_TOKEN_REGEX in pelori_infra so a malformed
+    // path can't lead to a broken pelori://invite/... CTA — falls
+    // through to not-found instead. Runs before i18n.js so any
+    // section toggles happen before the translation pass walks the
+    // DOM.
+    (function () {
+      var INVITE_RE = /^\/i\/([0-9A-HJKMNP-TV-Z]{20,32})$/;
+      var match = INVITE_RE.exec(window.location.pathname);
+      var landing = document.getElementById('invite-landing');
+      var notFound = document.getElementById('not-found');
+
+      if (match) {
+        var token = match[1];
+        var openBtn = document.getElementById('invite-open');
+        if (openBtn) openBtn.setAttribute('href', 'pelori://invite/' + token);
+        // Show the store CTA that matches the visitor's platform. On
+        // desktop we surface both — the user is probably forwarding
+        // the link to a phone. iPad is included in /iPhone|iPod/ via
+        // the maxTouchPoints hack because modern iPadOS UAs claim
+        // Macintosh.
+        var ua = navigator.userAgent || '';
+        var isIos = /iPhone|iPad|iPod/.test(ua)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /Android/.test(ua);
+        var iosBtn = document.getElementById('invite-store-ios');
+        var androidBtn = document.getElementById('invite-store-android');
+        if (isIos && iosBtn) iosBtn.hidden = false;
+        else if (isAndroid && androidBtn) androidBtn.hidden = false;
+        else {
+          if (iosBtn) iosBtn.hidden = false;
+          if (androidBtn) androidBtn.hidden = false;
+        }
+        if (landing) landing.hidden = false;
+      } else if (notFound) {
+        notFound.hidden = false;
+      }
+    })();
+  </script>
+  <script src="assets/i18n.js"></script>
+  <script src="assets/nav-drawer.js"></script>
+</body>
+</html>

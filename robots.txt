@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
+# Invite links are bearer secrets — one-tap join into a private ride
+# for anyone holding the URL. Don't let crawlers index them and
+# don't follow links into the /i/* path. Server-side 24h expiry
+# means an indexed token would mostly fail anyway, but
+# defence-in-depth.
+Disallow: /i/
 
 Sitemap: https://pelori.fit/sitemap.xml
